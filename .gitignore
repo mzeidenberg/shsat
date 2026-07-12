@@ -1,0 +1,23 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+ios/Flutter/.last_build_id
+android/.gradle/
+android/gradlew
+android/gradlew.bat
+*.iml
+
+# Generator tool
+tool/generator/node_modules/
+tool/generator/dist/
+tool/generator/.env
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
