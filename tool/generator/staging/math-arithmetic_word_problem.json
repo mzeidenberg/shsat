@@ -1,0 +1,80 @@
+[
+  {
+    "id": "math-arithmetic_word_problem-000000",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A store marks up the wholesale price of a backpack by 40% to get the retail price. During a sale, the store then discounts the retail price by 25%. If the wholesale price of the backpack is $60, what is the sale price?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$56.00"
+      },
+      {
+        "key": "B",
+        "text": "$63.00"
+      },
+      {
+        "key": "C",
+        "text": "$42.00"
+      },
+      {
+        "key": "D",
+        "text": "$66.00"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Retail price = 60 × 1.40 = $84. Sale price = 84 × (1 − 0.25) = 84 × 0.75 = $63.00.",
+    "check_expression": "60 * 1.40 * 0.75",
+    "metadata": {
+      "content_hash": "sha256:a5df1a843f1bc801291e1fcef51cc60f7753baa0fd5c776dde3c885619c3b9d0",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:08:00.716Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": false,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000001",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A car travels 150 miles using 6 gallons of gas. At this same rate, how many gallons of gas will the car need to travel 400 miles?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "14 gallons"
+      },
+      {
+        "key": "B",
+        "text": "15 gallons"
+      },
+      {
+        "key": "C",
+        "text": "16 gallons"
+      },
+      {
+        "key": "D",
+        "text": "18 gallons"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The rate is 150 miles per 6 gallons, or 25 miles per gallon. To travel 400 miles: 400 ÷ 25 = 16 gallons.",
+    "check_expression": "400 / (150 / 6)",
+    "metadata": {
+      "content_hash": "sha256:1a2e46a80b7d27cb1417685d430d04da9f230f269b12585038a1090a914270f8",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:08:02.176Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": false,
+      "reviewer": null
+    }
+  }
+]

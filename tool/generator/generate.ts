@@ -134,12 +134,7 @@ async function existingHashes(subject: Subject, type: QuestionType): Promise<Set
 
 async function main() {
   const { subject, type, count } = parseArgs();
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error("ANTHROPIC_API_KEY is not set. Export it before running the generator.");
-    process.exit(1);
-  }
-  const client = new Anthropic({ apiKey });
+  const client = new Anthropic();
 
   console.log(`Generating ${count} ${subject}/${type} question(s) with ${GENERATOR_MODEL}...`);
   const { passage, raw } = await generateBatch(client, subject, type, count);
