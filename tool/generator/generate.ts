@@ -115,9 +115,9 @@ async function generateBatch(
   }
   const input = toolUse.input as any;
   if (type === "reading_comprehension") {
-    return { passage: input.passage, raw: input.questions };
+    return { passage: input.passage, raw: input.questions ?? [] };
   }
-  return { raw: input.questions };
+  return { raw: input.questions ?? [] };
 }
 
 async function nextSeq(subject: Subject, type: QuestionType): Promise<number> {
@@ -165,6 +165,18 @@ async function main() {
   let failedVerifier = 0;
 
   for (const q of raw) {
+    const malformed =
+      !q.prompt ||
+      !Array.isArray(q.choices) ||
+      q.choices.length !== 4 ||
+      q.choices.some((c) => !c.key || !c.text) ||
+      !q.answer_key ||
+      !q.explanation;
+    if (malformed) {
+      console.warn("  skipping malformed question from model output");
+      continue;
+    }
+
     const hash = contentHash(q.prompt, q.choices);
     if (seenHashes.has(hash)) {
       skippedDup++;

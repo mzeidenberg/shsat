@@ -1,1 +1,1104 @@
-[]
+[
+  {
+    "id": "ela-grammar_edit-000000",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Choose the best way to revise the underlined portion of the sentence.\n\nAfter finishing her homework, the television was turned on by Maria so she could watch her favorite show.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "After finishing her homework, the television was turned on by Maria so she could watch her favorite show."
+      },
+      {
+        "key": "B",
+        "text": "After finishing her homework, Maria turned on the television so she could watch her favorite show."
+      },
+      {
+        "key": "C",
+        "text": "After finishing her homework, the television, turned on by Maria, so she could watch her favorite show."
+      },
+      {
+        "key": "D",
+        "text": "After finishing her homework, Maria's television was turned on so she could watch her favorite show."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The original sentence has a dangling/misplaced modifier problem: 'After finishing her homework' should describe Maria, but the sentence structure makes it seem to describe 'the television' (since the subject of the main clause is 'the television'). Choice B fixes this by making Maria the subject of the sentence, so the introductory phrase correctly modifies her. Choice A is the original, uncorrected sentence. Choice C creates a sentence fragment with faulty structure. Choice D still illogically implies the television finished the homework.",
+    "metadata": {
+      "content_hash": "sha256:bc0aecee68254dd215da9cf88ff1a4b6fcd4de5df808d75e84e3e9ddd1b35ca9",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:17:49.305Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000001",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best combines the two sentences while correcting the punctuation error?\n\nThe science fair projects were due on Friday, many students however had not finished their research.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The science fair projects were due on Friday, many students however had not finished their research."
+      },
+      {
+        "key": "B",
+        "text": "The science fair projects were due on Friday; however, many students had not finished their research."
+      },
+      {
+        "key": "C",
+        "text": "The science fair projects were due on Friday however, many students had not finished their research."
+      },
+      {
+        "key": "D",
+        "text": "The science fair projects were due on Friday, however many students had not finished their research."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "This sentence contains a comma splice: two independent clauses joined only by a comma, with the conjunctive adverb 'however' placed awkwardly. The correct way to join two independent clauses with a conjunctive adverb is to use a semicolon before it and a comma after it, as in choice B: '...Friday; however, many students...'. Choice A is the uncorrected original with a comma splice. Choice C incorrectly uses only a comma after 'however' with no semicolon before it, still creating a run-on. Choice D uses only a comma before 'however,' which is not strong enough to separate two independent clauses, resulting in a comma splice.",
+    "metadata": {
+      "content_hash": "sha256:abad198bd8cdcec5f9588b7b5cf5da85a1b937a1345153025f7ffb234654a9c3",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:17:50.794Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000002",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nEach of the students in the science club have to bring their own safety goggles to the lab session.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Each of the students in the science club have to bring his or her own safety goggles to the lab session."
+      },
+      {
+        "key": "B",
+        "text": "Each of the students in the science club has to bring his or her own safety goggles to the lab session."
+      },
+      {
+        "key": "C",
+        "text": "Each of the students in the science club has to bring their own safety goggles to the lab session."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "\"Each\" is a singular indefinite pronoun, so it needs the singular verb \"has\" and the singular pronoun \"his or her,\" not \"have\" and \"their.\"",
+    "metadata": {
+      "content_hash": "sha256:3a667c4c3f920cc84d03333a34c58a93f17959ab22a3900dd337596c064396ce",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:37.089Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000003",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nAfter finishing her homework, the television was watched by Marisol for two hours.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "After finishing her homework, Marisol watched television for two hours."
+      },
+      {
+        "key": "B",
+        "text": "After finishing her homework, television was watched by Marisol for two hours."
+      },
+      {
+        "key": "C",
+        "text": "After Marisol finishing her homework, the television was watched for two hours."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The introductory phrase \"After finishing her homework\" must modify the person doing the action, Marisol, so she needs to be the subject of the sentence; the original has a dangling modifier and awkward passive voice.",
+    "metadata": {
+      "content_hash": "sha256:65480bec3cd87bde57b3229dce82451680b99145f5df8b90db1c41e3cc953f5d",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:38.779Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000004",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe coach told the players, that practice would be canceled due to the storm.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The coach told the players that, practice would be canceled due to the storm."
+      },
+      {
+        "key": "B",
+        "text": "The coach told the players that practice would be canceled due to the storm."
+      },
+      {
+        "key": "C",
+        "text": "The coach told the players, that practice would be canceled, due to the storm."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "No comma is needed before the noun clause beginning with \"that,\" since it is not a nonessential or introductory element; removing the comma corrects the sentence.",
+    "metadata": {
+      "content_hash": "sha256:ef7d74a195cab99c0c5575f12a94f3c2fcb808f49693c707d4889981160c4ce3",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:41.235Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000005",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nMy sister enjoys hiking, swimming, and to ride her bicycle on weekends.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "My sister enjoys hiking, swimming, and riding her bicycle on weekends."
+      },
+      {
+        "key": "B",
+        "text": "My sister enjoys to hike, to swim, and to ride her bicycle on weekends."
+      },
+      {
+        "key": "C",
+        "text": "My sister enjoys hiking, swimming, and rode her bicycle on weekends."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The items in the list should be parallel in form; since \"hiking\" and \"swimming\" are gerunds, the third item should also be a gerund, \"riding,\" not the infinitive \"to ride.\"",
+    "metadata": {
+      "content_hash": "sha256:f19f4b9ce207cc555dd96c1589f082db82d839aff3b605aa78479b12d4cbb2cc",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:45.353Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000006",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe museum's new exhibit, which features ancient Egyptian artifacts is expected to attract thousands of visitors.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The museum's new exhibit, which features ancient Egyptian artifacts, is expected to attract thousands of visitors."
+      },
+      {
+        "key": "B",
+        "text": "The museum's new exhibit which features ancient Egyptian artifacts, is expected to attract thousands of visitors."
+      },
+      {
+        "key": "C",
+        "text": "The museum's new exhibit, which features ancient Egyptian artifacts is expected, to attract thousands of visitors."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The nonessential clause \"which features ancient Egyptian artifacts\" must be set off by commas on both sides; the original sentence is missing the closing comma.",
+    "metadata": {
+      "content_hash": "sha256:c5b124934c5a7c2a5bfbaf803c26dc119d724a7f1c5494c64419529367c60307",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:47.499Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000007",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nNeither the principal nor the teachers was aware of the schedule change until this morning.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Neither the principal nor the teachers were aware of the schedule change until this morning."
+      },
+      {
+        "key": "B",
+        "text": "Neither the principal or the teachers was aware of the schedule change until this morning."
+      },
+      {
+        "key": "C",
+        "text": "Neither the principal nor the teachers is aware of the schedule change until this morning."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "With \"neither...nor,\" the verb agrees with the noun closer to it; since \"teachers\" is plural, the verb should be \"were,\" not \"was.\"",
+    "metadata": {
+      "content_hash": "sha256:d15f6bffc00535f435354b916893daf55b2b5002ca714c4266251aa0408fb084",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:49.081Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000008",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nBecause the bridge was closed for repairs, drivers had to take a detour, they were annoyed by the delay.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Because the bridge was closed for repairs, drivers had to take a detour and they were annoyed by the delay."
+      },
+      {
+        "key": "B",
+        "text": "Because the bridge was closed for repairs, drivers had to take a detour; they were annoyed by the delay."
+      },
+      {
+        "key": "C",
+        "text": "Because the bridge was closed for repairs drivers had to take a detour, they were annoyed by the delay."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The original sentence is a comma splice joining two independent clauses. A semicolon correctly separates the two related independent clauses.",
+    "metadata": {
+      "content_hash": "sha256:1df97f1c38ede3350707db71fb4927ae1eaf170864608d034b28d214c9b57330",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:50.527Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000009",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe recipe calls for two cups of flour, one cup of sugar, and a half a cup of butter, it also needs a pinch of salt.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The recipe calls for two cups of flour, one cup of sugar, and a half a cup of butter. It also needs a pinch of salt."
+      },
+      {
+        "key": "B",
+        "text": "The recipe calls for two cups of flour, one cup of sugar, and a half a cup of butter it also needs a pinch of salt."
+      },
+      {
+        "key": "C",
+        "text": "The recipe calls for two cups of flour, one cup of sugar, and a half a cup of butter, also it needs a pinch of salt."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The comma before \"it also needs\" creates a comma splice joining two independent clauses; splitting them into two separate sentences with a period fixes the error.",
+    "metadata": {
+      "content_hash": "sha256:42a9e8a9e49a462ce1000c48a7974ae1d716310673ccb93d06e9d353e565398b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:52.154Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000010",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nBetween you and I, the final exam was much harder than last year's exam.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Between you and me, the final exam was much harder than last year's exam."
+      },
+      {
+        "key": "B",
+        "text": "Between you and myself, the final exam was much harder than last year's exam."
+      },
+      {
+        "key": "C",
+        "text": "Between I and you, the final exam was much harder than last year's exam."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "As the object of the preposition \"between,\" the pronoun should be in the objective case, \"me,\" not the subjective case \"I.\"",
+    "metadata": {
+      "content_hash": "sha256:99d12356cf5e6961bbcfdc09e6fae0e43abfe1778e9dcaf6d538706afcf29472",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:53.686Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000011",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe committee will announce it's decision about the new dress code policy tomorrow afternoon.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The committee will announce its decision about the new dress code policy tomorrow afternoon."
+      },
+      {
+        "key": "B",
+        "text": "The committee will announce its' decision about the new dress code policy tomorrow afternoon."
+      },
+      {
+        "key": "C",
+        "text": "The committee will announce their decision about the new dress code policy tomorrow afternoon."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "\"Its\" is the possessive form, while \"it's\" is a contraction for \"it is.\" The sentence requires the possessive \"its,\" referring to the committee's decision.",
+    "metadata": {
+      "content_hash": "sha256:fd77ad04441ebd6434b950418da600d7eb5ed54e35812225a529303d99150633",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:56.175Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000012",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nRunning quickly through the crowded hallway, the backpack fell off of the student's shoulder.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Running quickly through the crowded hallway, the student's backpack fell off of her shoulder."
+      },
+      {
+        "key": "B",
+        "text": "Running quickly through the crowded hallway, the backpack fell off of her shoulder."
+      },
+      {
+        "key": "C",
+        "text": "Running quickly through the crowded hallway, the student dropped her backpack off of her shoulder."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The introductory phrase \"Running quickly through the crowded hallway\" must describe the person running, the student, not the backpack; only choice C correctly places the student as the one performing the running and dropping actions.",
+    "metadata": {
+      "content_hash": "sha256:0bd4b4925d64e27a15446993004b105fe0e4b5bfa19a1532f36753899e40f4fd",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:18:57.886Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000013",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nOf all the novels in the library, this one is more interesting.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Of all the novels in the library, this one is the most interesting."
+      },
+      {
+        "key": "B",
+        "text": "Of all the novels in the library, this one is interestinger."
+      },
+      {
+        "key": "C",
+        "text": "Of all the novels in the library, this one is more interestinger."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "When comparing more than two things (all the novels in the library), the superlative form \"most interesting\" should be used instead of the comparative \"more interesting.\"",
+    "metadata": {
+      "content_hash": "sha256:8f7242d0347e151446c4e2f7684a9e7b3ec658d48bae6cf15c3cf9c38aacb326",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:19:03.536Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000014",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe students was excited about the field trip to the science center, and they packed there lunches the night before.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The students were excited about the field trip to the science center, and they packed their lunches the night before."
+      },
+      {
+        "key": "B",
+        "text": "The students was excited about the field trip to the science center, and they packed their lunches the night before."
+      },
+      {
+        "key": "C",
+        "text": "The students were excited about the field trip to the science center, and they packed there lunches the night before."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The plural subject \"students\" requires the plural verb \"were,\" not \"was,\" and the possessive form \"their\" is needed rather than the location word \"there.\"",
+    "metadata": {
+      "content_hash": "sha256:7f3235c0ba2b9912e4bca02496a4689ca0486766b3a337c974606c1366bc898b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:19:07.811Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000015",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nThe teacher explained the assignment carefully, however, several students still had questions afterward.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The teacher explained the assignment carefully; however, several students still had questions afterward."
+      },
+      {
+        "key": "B",
+        "text": "The teacher explained the assignment carefully however several students still had questions afterward."
+      },
+      {
+        "key": "C",
+        "text": "The teacher explained the assignment carefully, however several students still had questions afterward."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "When a conjunctive adverb like \"however\" joins two independent clauses, it should be preceded by a semicolon and followed by a comma, not just a comma before it.",
+    "metadata": {
+      "content_hash": "sha256:7aab97fa57376be8d38a2757665cf3fc9e141dfc71e03f2c2ae13475fcf10975",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:19:09.978Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000016",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Which choice best corrects the sentence?\n\nOut of the two paths, the shortest one leads directly to the campsite by the lake.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Out of the two paths, the shorter one leads directly to the campsite by the lake."
+      },
+      {
+        "key": "B",
+        "text": "Out of the two paths, the most short one leads directly to the campsite by the lake."
+      },
+      {
+        "key": "C",
+        "text": "Out of the two paths, the shortest of one leads directly to the campsite by the lake."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "When comparing only two things, the comparative form \"shorter\" should be used rather than the superlative \"shortest,\" which is reserved for comparing three or more things.",
+    "metadata": {
+      "content_hash": "sha256:1ba6ef17e6bbebd0c294d306fce0e5c2dba6a13e9f2c19559f0f5e94846c7cec",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:19:11.442Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000017",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which is the best way to revise the sentence?\n\nAfter finishing her homework, the television was turned on by Maria.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "After finishing her homework, the television was turned on by Maria."
+      },
+      {
+        "key": "B",
+        "text": "After finishing her homework, Maria turned on the television."
+      },
+      {
+        "key": "C",
+        "text": "After finishing her homework, Maria's television was turned on."
+      },
+      {
+        "key": "D",
+        "text": "The television, after finishing her homework, was turned on by Maria."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The original sentence has a dangling modifier because 'the television' cannot finish homework. Choice B correctly places 'Maria' right after the introductory phrase, since she is the one who finished her homework.",
+    "metadata": {
+      "content_hash": "sha256:da85f5158f35bd7eb1748a569a3e977c9ca9f06330da60799d77cfb31fe49bfb",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:01.482Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000018",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Choose the sentence that is punctuated correctly.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Before the game started, the coach, gathered the team for a quick pep talk."
+      },
+      {
+        "key": "B",
+        "text": "Before the game started the coach gathered the team, for a quick pep talk."
+      },
+      {
+        "key": "C",
+        "text": "Before the game started, the coach gathered the team for a quick pep talk."
+      },
+      {
+        "key": "D",
+        "text": "Before, the game started the coach gathered the team for a quick pep talk."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "A comma should follow the introductory dependent clause 'Before the game started,' and no other commas are needed in the sentence. Choice C places the comma correctly.",
+    "metadata": {
+      "content_hash": "sha256:ca98cf5a85352d693d3f4f9f1af2c4a8d172a8baed7bb8de827d8b5e4beafcb8",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:03.019Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000019",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which choice best combines the two sentences?\n\nThe museum's new exhibit features ancient pottery. It also includes tools used by early farmers.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The museum's new exhibit features ancient pottery, it also includes tools used by early farmers."
+      },
+      {
+        "key": "B",
+        "text": "The museum's new exhibit features ancient pottery and tools used by early farmers."
+      },
+      {
+        "key": "C",
+        "text": "The museum's new exhibit features ancient pottery, tools used by early farmers are also included."
+      },
+      {
+        "key": "D",
+        "text": "Featuring ancient pottery, tools used by early farmers are also in the museum's new exhibit."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Choice B combines the two related ideas smoothly and concisely using a compound object, avoiding the comma splice in A and the awkward, unclear phrasing in C and D.",
+    "metadata": {
+      "content_hash": "sha256:c2bba1e5fff3dc3f8dd9faffd9ccc653937a4a60fe53afe70e716d66510a50a1",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:05.107Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000020",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Read the sentence below.\n\nThe recipe calls for two cups of flour, one cup of sugar, and a half cup of butter, than it should be baked for thirty minutes.\n\nWhich correction should be made?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Change 'than' to 'then'"
+      },
+      {
+        "key": "B",
+        "text": "Change 'calls for' to 'calling for'"
+      },
+      {
+        "key": "C",
+        "text": "Remove the comma after 'sugar'"
+      },
+      {
+        "key": "D",
+        "text": "Change 'should be baked' to 'baking'"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The word 'than' is used for comparisons, while 'then' indicates sequence in time. Since the sentence describes a sequence of steps, 'then' is correct.",
+    "metadata": {
+      "content_hash": "sha256:ee0240fa8c7e882934a7486c26bb72ed7f2bc2e494181592d6c018efee9e89de",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:08.034Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000021",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Which sentence is written correctly?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Me and my brother built a treehouse last summer."
+      },
+      {
+        "key": "B",
+        "text": "My brother and me built a treehouse last summer."
+      },
+      {
+        "key": "C",
+        "text": "My brother and I built a treehouse last summer."
+      },
+      {
+        "key": "D",
+        "text": "I and my brother built a treehouse last summer."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "As the subject of the sentence, the pronoun should be in subject form 'I,' not object form 'me,' and convention places the other person before oneself, making 'My brother and I' correct.",
+    "metadata": {
+      "content_hash": "sha256:e9635b1c25485a8761359763ba6beac8caae1b2658959f133168912171cee766",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:09.376Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000022",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which revision corrects the run-on sentence below?\n\nThe storm knocked out power across the neighborhood residents had to use flashlights and candles for two days.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The storm knocked out power across the neighborhood, residents had to use flashlights and candles for two days."
+      },
+      {
+        "key": "B",
+        "text": "The storm knocked out power across the neighborhood; residents had to use flashlights and candles for two days."
+      },
+      {
+        "key": "C",
+        "text": "The storm knocked out power across the neighborhood residents, had to use flashlights and candles for two days."
+      },
+      {
+        "key": "D",
+        "text": "The storm knocked out power, across the neighborhood residents had to use flashlights and candles for two days."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The sentence contains two independent clauses that need to be properly joined. A semicolon correctly links them without creating a comma splice, as seen in choice A.",
+    "metadata": {
+      "content_hash": "sha256:3f4eb9294c8872c9b6eb83d5ec8ebfbbad3962b29ebd1438f071bb09fc4bb093",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:10.966Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000023",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Which choice best revises the underlined portion of the sentence for clarity?\n\nThe science teacher explained that photosynthesis, which is the process plants use to make food, and it requires sunlight, water, and carbon dioxide.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "No change is needed."
+      },
+      {
+        "key": "B",
+        "text": "photosynthesis, which is the process plants use to make food, requires sunlight, water, and carbon dioxide"
+      },
+      {
+        "key": "C",
+        "text": "photosynthesis is the process plants use to make food, and requiring sunlight, water, and carbon dioxide"
+      },
+      {
+        "key": "D",
+        "text": "photosynthesis, the process plants use to make food, it requires sunlight, water, and carbon dioxide"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The original sentence has a faulty structure because the subject 'photosynthesis' never connects to a proper verb due to the extra 'and it.' Choice B removes the unnecessary conjunction and pronoun, creating a grammatically correct sentence with a clear subject and verb.",
+    "metadata": {
+      "content_hash": "sha256:de11a8ed5f7c0353c3d40b4be1741044a737920a2573dfe5ac190a359e6a3498",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:12.454Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000024",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Choose the sentence with the correct use of apostrophes.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The dog's bowl and the cats' toys were scattered across the childrens' playroom."
+      },
+      {
+        "key": "B",
+        "text": "The dogs bowl and the cat's toys were scattered across the children's playroom."
+      },
+      {
+        "key": "C",
+        "text": "The dog's bowl and the cat's toys were scattered across the children's playroom."
+      },
+      {
+        "key": "D",
+        "text": "The dogs' bowl and the cats' toys were scattered across the childrens playroom."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Since there is one dog and one cat, both need singular possessive apostrophes ('dog's,' 'cat's'). 'Children' is already plural, so its possessive form is 'children's,' not 'childrens'.'",
+    "metadata": {
+      "content_hash": "sha256:1ca45d769262e09a97efc0262382829381826bb23c02b74f15934dc791819f45",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:13.980Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000025",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which version of the sentence uses parallel structure correctly?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "During the trip, the students visited museums, tasted local food, and were hiking through the mountains."
+      },
+      {
+        "key": "B",
+        "text": "During the trip, the students visited museums, tasted local food, and hiked through the mountains."
+      },
+      {
+        "key": "C",
+        "text": "During the trip, the students were visiting museums, tasted local food, and hiked through the mountains."
+      },
+      {
+        "key": "D",
+        "text": "During the trip, the students visited museums, tasting local food, and hiked through the mountains."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "For parallel structure, all items in the series should use the same verb form. Choice B correctly uses the simple past tense ('visited,' 'tasted,' 'hiked') throughout.",
+    "metadata": {
+      "content_hash": "sha256:f8666de707f7197a30ee4f7f85bda3cc70d5c04907f859ee138f3ae5df638252",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:15.628Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000026",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which sentence correctly uses the underlined word?\n\nThe two teams played there best game of the season, and afterward they're coach praised them for it.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "No change is needed."
+      },
+      {
+        "key": "B",
+        "text": "The two teams played their best game of the season, and afterward their coach praised them for it."
+      },
+      {
+        "key": "C",
+        "text": "The two teams played their best game of the season, and afterward there coach praised them for it."
+      },
+      {
+        "key": "D",
+        "text": "The two teams played they're best game of the season, and afterward their coach praised them for it."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "'Their' is the possessive form needed before 'best game' and 'coach,' while 'there' refers to location and 'they're' means 'they are'—neither fits here. Choice B uses 'their' correctly in both places.",
+    "metadata": {
+      "content_hash": "sha256:dc1838568e681d0ea29f9fb8209855b5b0ea9f38d1fa9012907dda149ccadbb9",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:17.414Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000027",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which sentence contains an unnecessary shift in verb tense?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Yesterday, the chef prepared a new dish, tasted it carefully, and adjusted the seasoning."
+      },
+      {
+        "key": "B",
+        "text": "The chef prepares a new dish, tastes it carefully, and adjusts the seasoning."
+      },
+      {
+        "key": "C",
+        "text": "Yesterday, the chef prepared a new dish, tastes it carefully, and adjusted the seasoning."
+      },
+      {
+        "key": "D",
+        "text": "Every day, the chef prepares a new dish, tastes it carefully, and adjusts the seasoning."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Since the sentence begins with 'Yesterday' and uses past tense verbs 'prepared' and 'adjusted,' the verb 'tastes' should also be in past tense ('tasted') to maintain consistency.",
+    "metadata": {
+      "content_hash": "sha256:cb32541240a4f963fbcfafbadd9b3ed2f595d9a03e3eb2457924913d6d0034c3",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:18.768Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000028",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Read the sentence below.\n\nThe committee will announce it's decision about the new park regulations tomorrow morning.\n\nWhich correction should be made?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Change 'it's' to 'its'"
+      },
+      {
+        "key": "B",
+        "text": "Change 'will announce' to 'announcing'"
+      },
+      {
+        "key": "C",
+        "text": "Change 'about' to 'of'"
+      },
+      {
+        "key": "D",
+        "text": "No change is needed"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "'Its' (no apostrophe) is the possessive form, showing the decision belongs to the committee. 'It's' is a contraction for 'it is,' which does not make sense in this sentence.",
+    "metadata": {
+      "content_hash": "sha256:d317b59551b249594f79b045f1b45a51c90f043e33ec04fb7d4a9f125aeeaa04",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:22:19.992Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  }
+]

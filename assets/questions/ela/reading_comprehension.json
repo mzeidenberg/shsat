@@ -1,1 +1,914 @@
-[]
+[
+  {
+    "id": "ela-reading_comprehension-000000",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000003",
+    "prompt": "Which choice best states the main idea of the passage?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Termites are dangerous pests that destroy human buildings."
+      },
+      {
+        "key": "B",
+        "text": "Termite mounds display remarkable engineering that has inspired human building design."
+      },
+      {
+        "key": "C",
+        "text": "All modern buildings in Africa are now built to look like termite mounds."
+      },
+      {
+        "key": "D",
+        "text": "Termites are the largest insects found in the animal kingdom."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage focuses on the impressive size and cooling design of termite mounds and explains how human architects have studied them for inspiration, making B the best summary of the main idea. A is not supported, C overstates the claim, and D is never mentioned.",
+    "metadata": {
+      "content_hash": "sha256:8be41f3bca1676c6724335e95e4842d570d6abb5d2bb46be1f00bf98d1f58917",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:24:34.964Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000001",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000003",
+    "prompt": "Based on the passage, what can be inferred about why termites orient their mounds to minimize direct sunlight?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "It helps regulate temperature and supports the mound's cooling system."
+      },
+      {
+        "key": "B",
+        "text": "It prevents predators from spotting the mounds easily."
+      },
+      {
+        "key": "C",
+        "text": "It allows the mounds to grow taller than nine feet."
+      },
+      {
+        "key": "D",
+        "text": "It makes the mounds easier for humans to study and copy."
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "The passage explains that mound orientation works alongside tunnels and chimneys to regulate airflow and temperature, so minimizing sun exposure is part of the overall cooling strategy described in the text.",
+    "metadata": {
+      "content_hash": "sha256:51498bc6895a8d301b310a1b3dcda85112c0019fcba218b0d089337700a1c98f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:24:36.431Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000002",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000003",
+    "prompt": "As used in the passage, the word \"dwarf\" most nearly means",
+    "choices": [
+      {
+        "key": "A",
+        "text": "shrink slightly"
+      },
+      {
+        "key": "B",
+        "text": "make appear small by comparison"
+      },
+      {
+        "key": "C",
+        "text": "resemble closely"
+      },
+      {
+        "key": "D",
+        "text": "grow slowly over time"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "In context, \"dwarf\" describes how termite mounds, relative to the termites' tiny body size, make even tall human buildings seem small by comparison, so it means to make something appear small in comparison.",
+    "metadata": {
+      "content_hash": "sha256:3763827bf3fdd2a57a1230f9765a4b6d6596509e50ba2d3c50d9a34668ecdc19",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:24:39.177Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000003",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000003",
+    "prompt": "According to the passage, how does the mound's ventilation system keep the interior temperature stable?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "By sealing the mound completely to block all outside air."
+      },
+      {
+        "key": "B",
+        "text": "By circulating warm air out through vents while drawing cooler air in from underground passages."
+      },
+      {
+        "key": "C",
+        "text": "By using materials that absorb and store heat overnight."
+      },
+      {
+        "key": "D",
+        "text": "By having termites physically fan air through the tunnels."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage explicitly describes warm air rising and escaping through upper vents while cooler air is drawn in from underground passages, creating continuous circulation that stabilizes temperature.",
+    "metadata": {
+      "content_hash": "sha256:39b30214ba365dfc6f7dc2005f00a6a73064d8316bfaded6ed443df2e517d48b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:24:40.918Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000004",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000004",
+    "prompt": "Which statement best expresses the main idea of the passage?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Beaver dams are dangerous obstacles that wildlife managers must remove quickly."
+      },
+      {
+        "key": "B",
+        "text": "Beaver activity, once seen as merely a nuisance, actually provides significant environmental benefits."
+      },
+      {
+        "key": "C",
+        "text": "Farmers and conservationists rarely disagree about how to handle beaver populations."
+      },
+      {
+        "key": "D",
+        "text": "Beavers build dams purely out of instinct, with no measurable effect on their surroundings."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage opens by noting beavers reshape landscapes, then details the many ecological benefits of their dams (wetland habitat, drought protection, fire resistance) before acknowledging conflicts with humans, ultimately concluding beaver activity is a valuable tool. This supports choice B as the main idea.",
+    "metadata": {
+      "content_hash": "sha256:3a79a3c45ed2314705c87097e2bd459af7b93d1a1c5fdf40fa1b6495314d615b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:19.548Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000005",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000004",
+    "prompt": "Based on the passage, what can be inferred about why beaver ponds help protect nearby vegetation from wildfires?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The ponds physically block flames from spreading across the landscape."
+      },
+      {
+        "key": "B",
+        "text": "The elevated water table caused by the ponds keeps surrounding plants moist, making them less flammable."
+      },
+      {
+        "key": "C",
+        "text": "Firefighters use beaver ponds as a water source to put out fires."
+      },
+      {
+        "key": "D",
+        "text": "Beavers clear away dry brush that would otherwise fuel wildfires."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage states that 'the elevated water table keeps nearby plants moist and fire-resistant,' directly supporting choice B. The other options are not mentioned or supported by the text.",
+    "metadata": {
+      "content_hash": "sha256:0bcdbc497bedcc422864567595a4f2c8f72b8e16da26f318aeab1ec175552d73",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:21.185Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000006",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000004",
+    "prompt": "As used in the passage, the word \"industrious\" most nearly means",
+    "choices": [
+      {
+        "key": "A",
+        "text": "lazy and inattentive"
+      },
+      {
+        "key": "B",
+        "text": "hardworking and diligent"
+      },
+      {
+        "key": "C",
+        "text": "aggressive and territorial"
+      },
+      {
+        "key": "D",
+        "text": "small and timid"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "\"Industrious\" describes beavers who actively reshape landscapes by constantly building dams, which matches the meaning \"hardworking and diligent.\" The other choices do not fit the context of tireless construction described in the passage.",
+    "metadata": {
+      "content_hash": "sha256:7306e01355f22cca96cce460ca1ec2b33d22c91b6f9c0c2d7dcb5b64cc87049a",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:22.536Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000007",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000004",
+    "prompt": "According to the passage, why have some regions begun deliberately reintroducing beavers?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "To reduce the population of fish and waterfowl in local ponds"
+      },
+      {
+        "key": "B",
+        "text": "To restore damaged waterways without relying on costly human-engineered solutions"
+      },
+      {
+        "key": "C",
+        "text": "To increase flooding on farmland for agricultural purposes"
+      },
+      {
+        "key": "D",
+        "text": "To study beaver behavior in controlled laboratory settings"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage directly states that conservationists have noticed the benefits of beaver ponds and 'some regions have begun deliberately reintroducing beavers to restore damaged waterways rather than relying solely on expensive human-engineered solutions,' matching choice B.",
+    "metadata": {
+      "content_hash": "sha256:1b9e59a4017dcf5d314e93a018eeca6d8762b23769536b991e185e882de5f3bb",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:24.048Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000008",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000004",
+    "prompt": "Which detail from the passage best supports the idea that human and beaver interests can sometimes conflict?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Beaver ponds allow sediment to settle, improving water quality downstream."
+      },
+      {
+        "key": "B",
+        "text": "Fish, amphibians, and waterfowl thrive in wetland habitats created by beaver dams."
+      },
+      {
+        "key": "C",
+        "text": "Farmers and property owners sometimes find flooded fields or fallen trees inconvenient."
+      },
+      {
+        "key": "D",
+        "text": "Beaver ponds act as reservoirs that keep ecosystems hydrated during droughts."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The passage explicitly mentions that beaver dams are 'not universally welcomed' and that farmers and property owners find flooded fields or fallen trees inconvenient, which directly illustrates conflict between human and beaver interests. The other choices describe environmental benefits, not conflicts.",
+    "metadata": {
+      "content_hash": "sha256:1f609c60f045dd38b1d48d32643ad9446bdade258fc5ca12444bd992e0cd3c5b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:26.335Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000009",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000005",
+    "prompt": "What is the main idea of the passage?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Termite mounds are the tallest structures built by any animal species."
+      },
+      {
+        "key": "B",
+        "text": "Termites communicate through pheromones that allow them to recognize individual colony members."
+      },
+      {
+        "key": "C",
+        "text": "The decentralized, cue-based building process of termites has proven complex enough to inspire human engineering and technology."
+      },
+      {
+        "key": "D",
+        "text": "Architects have completely replaced air conditioning with designs copied directly from termite mounds."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The passage traces how termite building behavior (through stigmergy) results in complex structures, and explains that this process has directly inspired human architecture and computer science, which is the passage's central point. Choice A is a detail, not the main idea; B misstates the communication method described; D overstates the architectural claim.",
+    "metadata": {
+      "content_hash": "sha256:aad169de4caab79bc41ff54ed96ebe66411764a70193e10f70697597ae3e9773",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:54.262Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000010",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000005",
+    "prompt": "As used in the passage, the word \"stigmergy\" most nearly means",
+    "choices": [
+      {
+        "key": "A",
+        "text": "a chemical produced only by termite queens"
+      },
+      {
+        "key": "B",
+        "text": "a form of indirect communication through environmental cues that coordinates collective behavior"
+      },
+      {
+        "key": "C",
+        "text": "a type of temperature-control shaft found in insect mounds"
+      },
+      {
+        "key": "D",
+        "text": "a disease that spreads rapidly through insect colonies"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage defines stigmergy directly: \"a process by which insects communicate indirectly through the environment itself,\" reacting to cues left by others rather than following a central plan. This matches choice B exactly.",
+    "metadata": {
+      "content_hash": "sha256:45c5a266ed32b8c2600b9603beba0515f24d48ed383dbe1b9f7c1368cf4d0adf",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:56.517Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000011",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000005",
+    "prompt": "Based on the passage, which of the following can be inferred about individual termites?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Each termite understands the final design of the mound before construction begins."
+      },
+      {
+        "key": "B",
+        "text": "Termites rely on a single leader termite to direct all building activity."
+      },
+      {
+        "key": "C",
+        "text": "No single termite needs to grasp the mound's overall structure for the colony to build it successfully."
+      },
+      {
+        "key": "D",
+        "text": "Termites build mounds primarily to attract human researchers' attention."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The passage states that a termite \"doesn't need to understand the mound's overall design\" and only reacts to small cues, implying that complex results emerge without any individual grasping the full picture. This directly supports choice C.",
+    "metadata": {
+      "content_hash": "sha256:c59a500ad56ba21f5674f7745ffc34fbdc5f585a7922330b9bc8899727358a31",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:58.454Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000012",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000005",
+    "prompt": "According to the passage, what detail best supports the claim that termite mounds function as effective climate-control systems?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Mounds can rise over eight feet tall and house millions of insects."
+      },
+      {
+        "key": "B",
+        "text": "Ventilation shafts keep the interior temperature within a narrow range despite large swings in outside temperature."
+      },
+      {
+        "key": "C",
+        "text": "Termites communicate using pheromones and mud shapes."
+      },
+      {
+        "key": "D",
+        "text": "Computer scientists have designed algorithms based on swarm behavior."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage explicitly credits the mound's ventilation shafts with regulating \"temperature and humidity with startling precision\" even as outside conditions vary widely, making B the detail that most directly supports the climate-control claim.",
+    "metadata": {
+      "content_hash": "sha256:227bf032ae166223515330bf7172f5a5c969c27e331b77093b3b7d8c434ccbe2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:25:59.815Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000013",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000005",
+    "prompt": "The passage suggests that human engineers and computer scientists have responded to termite behavior by",
+    "choices": [
+      {
+        "key": "A",
+        "text": "dismissing insect behavior as too simple to be scientifically useful"
+      },
+      {
+        "key": "B",
+        "text": "applying principles observed in termite colonies to solve human design and technology problems"
+      },
+      {
+        "key": "C",
+        "text": "attempting to eliminate termite mounds because they interfere with construction projects"
+      },
+      {
+        "key": "D",
+        "text": "recreating termite pheromones in laboratories for agricultural use"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage describes architects designing buildings inspired by mound ventilation and computer scientists borrowing stigmergy for swarm robotics, both examples of applying termite-inspired principles to human problems, supporting choice B.",
+    "metadata": {
+      "content_hash": "sha256:89106a0b0d85813350a0851bcb86526560da566852a8a510a07f08842291c2ac",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:01.943Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000014",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000006",
+    "prompt": "Which choice best expresses the main idea of the passage?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Termite mounds are dangerous structures that human engineers should avoid studying."
+      },
+      {
+        "key": "B",
+        "text": "Termite mounds demonstrate a natural cooling system so effective that it has influenced modern human architecture."
+      },
+      {
+        "key": "C",
+        "text": "The Eastgate Centre in Zimbabwe was built entirely out of termite mounds."
+      },
+      {
+        "key": "D",
+        "text": "Termites are more intelligent than most other insects because they build tall structures."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage centers on how termite mounds' passive cooling system inspired real human architecture, especially the Eastgate Centre example, making B the best summary of the main idea. The other choices either misstate details or aren't the central focus.",
+    "metadata": {
+      "content_hash": "sha256:0161aa95efcf693f69fe88557c5181ff60f912afab554c4d90d53722f53c4f3e",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:28.690Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000015",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000006",
+    "prompt": "Based on the passage, what can be inferred about the individual termites that build a mound?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Each termite follows detailed blueprints created by a lead architect termite."
+      },
+      {
+        "key": "B",
+        "text": "The termites communicate using complex spoken language to coordinate construction."
+      },
+      {
+        "key": "C",
+        "text": "No single termite understands or plans the overall structure, yet a complex design still results."
+      },
+      {
+        "key": "D",
+        "text": "Termites build mounds purely by accident, with no cues guiding their behavior."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The final paragraph explicitly states that no single termite oversees construction and that thousands of insects respond to simple cues, resulting in complex design without a designer. This directly supports choice C, while the others contradict the text.",
+    "metadata": {
+      "content_hash": "sha256:121a8effac8b0cc35dff7954fed5d1d2b78fc83d32b33cc210fd97dc03547570",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:30.714Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000016",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000006",
+    "prompt": "As used in the passage, the word \"passive\" most nearly means",
+    "choices": [
+      {
+        "key": "A",
+        "text": "requiring active mechanical effort to function"
+      },
+      {
+        "key": "B",
+        "text": "operating without requiring external energy input or mechanical devices"
+      },
+      {
+        "key": "C",
+        "text": "unable to regulate temperature at all"
+      },
+      {
+        "key": "D",
+        "text": "designed specifically for use in cold climates"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage describes the termite mound's cooling system as working through natural airflow \"without any mechanical parts,\" and the Eastgate Centre mimics this to reduce energy use. This context shows \"passive\" means functioning without external power or mechanisms, matching choice B.",
+    "metadata": {
+      "content_hash": "sha256:7e5c92f9be7ce370bd590cd59ae2cdc5fef8518a2a66a33299ab23504af84cc8",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:32.277Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000017",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000006",
+    "prompt": "According to the passage, how does the Eastgate Centre compare to a conventional building of similar size?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "It uses about ten times more energy than a conventional building."
+      },
+      {
+        "key": "B",
+        "text": "It uses roughly ten percent of the energy a conventional building would need."
+      },
+      {
+        "key": "C",
+        "text": "It uses exactly the same amount of energy as a conventional building."
+      },
+      {
+        "key": "D",
+        "text": "It uses no energy at all, unlike conventional buildings."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage directly states that the Eastgate Centre \"uses roughly ten percent of the energy that a conventional structure of similar size would require,\" making B the correct detail from the text.",
+    "metadata": {
+      "content_hash": "sha256:6514463f5a60a093aad35575dc3dc1d9cb27dd5225382cc13f2ebccd5e2ccd48",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:34.202Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000018",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "hard",
+    "passage_id": "ela-passage-000006",
+    "prompt": "Why does the author most likely mention that termites were once seen as \"little more than a nuisance\"?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "To argue that termites should still be considered pests today"
+      },
+      {
+        "key": "B",
+        "text": "To highlight a contrast between termites' destructive reputation and their surprising engineering abilities"
+      },
+      {
+        "key": "C",
+        "text": "To explain why termite mounds are no longer studied by scientists"
+      },
+      {
+        "key": "D",
+        "text": "To prove that termites are the most destructive insects in the world"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "By opening with termites' reputation as mere pests before revealing their impressive mound-building abilities, the author sets up a contrast that emphasizes how surprising and remarkable their engineering skills are, supporting choice B.",
+    "metadata": {
+      "content_hash": "sha256:4564a661058eebfaa1fa3bb96df85f1d1d7bced750c7cc7dc12aba1aaae94a30",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:26:35.704Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000019",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000008",
+    "prompt": "Which statement best expresses the main idea of the passage?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Cities should remove all buried rivers to prevent flooding."
+      },
+      {
+        "key": "B",
+        "text": "Buried rivers, once hidden to solve urban problems, are now being reconsidered as valuable urban resources."
+      },
+      {
+        "key": "C",
+        "text": "Subway systems are often damaged by underground streams."
+      },
+      {
+        "key": "D",
+        "text": "Street names in New York City are based entirely on old waterways."
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage explains why rivers were buried, how they still affect cities today, and how planners now see them as valuable, which captures the overall main idea. The other choices are either too narrow, unsupported, or exaggerated.",
+    "metadata": {
+      "content_hash": "sha256:03b9870b11b62ffec43d473533f8fb16a07d1ee1c2da3cd0962ba299b81a0fa9",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:27:31.185Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000020",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "medium",
+    "passage_id": "ela-passage-000008",
+    "prompt": "Based on the passage, why did early city planners choose to bury streams rather than eliminate them completely?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "They wanted to preserve them as tourist attractions."
+      },
+      {
+        "key": "B",
+        "text": "It was cheaper than building new water systems."
+      },
+      {
+        "key": "C",
+        "text": "The water still needed somewhere to flow, so encasing it was a practical compromise."
+      },
+      {
+        "key": "D",
+        "text": "Government regulations required all rivers to be preserved underground."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The passage states that engineers faced flooding and sanitation problems but still needed to manage the water, so they encased the streams instead of removing them entirely—making C the best inference.",
+    "metadata": {
+      "content_hash": "sha256:cfd3e843afe97290288a5bf9537c436a4253a65592117b1d6394077b675dc26f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:27:35.128Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000021",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000008",
+    "prompt": "As used in the passage, the word \"daylighting\" most nearly means",
+    "choices": [
+      {
+        "key": "A",
+        "text": "adding artificial lighting to underground tunnels"
+      },
+      {
+        "key": "B",
+        "text": "uncovering and restoring buried waterways to the surface"
+      },
+      {
+        "key": "C",
+        "text": "measuring how much sunlight reaches city streets"
+      },
+      {
+        "key": "D",
+        "text": "constructing new rivers in previously dry areas"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage directly defines daylighting as projects where portions of buried streams are uncovered and restored to the surface, matching choice B.",
+    "metadata": {
+      "content_hash": "sha256:6874fe696931b192382e1bcef8e7251ae69bd949c91b1a4acef594e44dd37d0f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:27:36.463Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000022",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "easy",
+    "passage_id": "ela-passage-000008",
+    "prompt": "According to the passage, what is one modern sign that buried rivers still exist beneath cities?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Increased traffic congestion near old riverbeds"
+      },
+      {
+        "key": "B",
+        "text": "Manholes overflowing or basements flooding during storms"
+      },
+      {
+        "key": "C",
+        "text": "Rising temperatures in underground tunnels"
+      },
+      {
+        "key": "D",
+        "text": "Frequent subway line closures"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "The passage explicitly mentions that during heavy storms, manholes overflow or basements flood unexpectedly, revealing the presence of buried waterways.",
+    "metadata": {
+      "content_hash": "sha256:c822d2072eee49e6830cda782947ad0b6e4171ae09e8d265d43eaa89611e2561",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:27:37.888Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-reading_comprehension-000023",
+    "subject": "ela",
+    "type": "reading_comprehension",
+    "difficulty": "hard",
+    "passage_id": "ela-passage-000008",
+    "prompt": "What can be inferred about the author's attitude toward daylighting projects?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "The author views them as unnecessary and overly expensive."
+      },
+      {
+        "key": "B",
+        "text": "The author is skeptical that they provide any real benefits."
+      },
+      {
+        "key": "C",
+        "text": "The author regards them as a positive development with practical and environmental benefits."
+      },
+      {
+        "key": "D",
+        "text": "The author believes they will eventually replace all city infrastructure."
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The passage lists benefits such as reduced flooding, wildlife support, and new green spaces, and concludes that overlooked parts of history can shape a city's future—indicating a favorable attitude toward daylighting.",
+    "metadata": {
+      "content_hash": "sha256:a573f0013f90bd8303f8b663111a9b7290f11db0c934fb4b18ad8b1e1a5ba89e",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:27:39.735Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  }
+]

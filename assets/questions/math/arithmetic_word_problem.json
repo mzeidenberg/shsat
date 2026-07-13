@@ -1,1 +1,1133 @@
-[]
+[
+  {
+    "id": "math-arithmetic_word_problem-000000",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A store marks up the wholesale price of a backpack by 40% to get the retail price. During a sale, the store then discounts the retail price by 25%. If the wholesale price of the backpack is $60, what is the sale price?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$56.00"
+      },
+      {
+        "key": "B",
+        "text": "$63.00"
+      },
+      {
+        "key": "C",
+        "text": "$42.00"
+      },
+      {
+        "key": "D",
+        "text": "$66.00"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Retail price = 60 × 1.40 = $84. Sale price = 84 × (1 − 0.25) = 84 × 0.75 = $63.00.",
+    "check_expression": "60 * 1.40 * 0.75",
+    "metadata": {
+      "content_hash": "sha256:a5df1a843f1bc801291e1fcef51cc60f7753baa0fd5c776dde3c885619c3b9d0",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:08:00.716Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000001",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A car travels 150 miles using 6 gallons of gas. At this same rate, how many gallons of gas will the car need to travel 400 miles?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "14 gallons"
+      },
+      {
+        "key": "B",
+        "text": "15 gallons"
+      },
+      {
+        "key": "C",
+        "text": "16 gallons"
+      },
+      {
+        "key": "D",
+        "text": "18 gallons"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The rate is 150 miles per 6 gallons, or 25 miles per gallon. To travel 400 miles: 400 ÷ 25 = 16 gallons.",
+    "check_expression": "400 / (150 / 6)",
+    "metadata": {
+      "content_hash": "sha256:1a2e46a80b7d27cb1417685d430d04da9f230f269b12585038a1090a914270f8",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:08:02.176Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000002",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A store marks up the wholesale price of a jacket by 40% to get the retail price. If the wholesale price is $65, what is the retail price?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$26.00"
+      },
+      {
+        "key": "B",
+        "text": "$91.00"
+      },
+      {
+        "key": "C",
+        "text": "$105.00"
+      },
+      {
+        "key": "D",
+        "text": "$65.40"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Retail price = wholesale + 40% of wholesale = 65 + 0.4(65) = 65 + 26 = $91.00.",
+    "check_expression": "65 + 0.40 * 65",
+    "metadata": {
+      "content_hash": "sha256:92ddcda5fe62346e5ac8b82bba9c635a3fee200302b13167b233c2f27eaff56d",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:26.741Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000003",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A recipe calls for 3 cups of flour for every 2 cups of sugar. If a baker uses 9 cups of flour, how many cups of sugar should she use to keep the ratio the same?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The ratio 3:2 scales up by a factor of 3 (since 9/3 = 3), so sugar = 2 * 3 = 6 cups.",
+    "check_expression": "9 / 3 * 2",
+    "metadata": {
+      "content_hash": "sha256:88b57f1e68f090aae77bd2521c630ca163563b2bdc0af8446a0c732f5f4addc6",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:28.959Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000004",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A car travels 240 miles using 8 gallons of gas. At this rate, how many miles can it travel on 14 gallons of gas?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "360 miles"
+      },
+      {
+        "key": "B",
+        "text": "400 miles"
+      },
+      {
+        "key": "C",
+        "text": "420 miles"
+      },
+      {
+        "key": "D",
+        "text": "480 miles"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Rate = 240/8 = 30 miles per gallon. On 14 gallons: 30 * 14 = 420 miles.",
+    "check_expression": "(240 / 8) * 14",
+    "metadata": {
+      "content_hash": "sha256:e84a7c5ffb9df4b298d0403e22e14beb847e6fee75e18414b69583f5434512d2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:31.503Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000005",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "In a class of 32 students, 18 are girls. What percent of the class is boys?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "43.75%"
+      },
+      {
+        "key": "B",
+        "text": "56.25%"
+      },
+      {
+        "key": "C",
+        "text": "50%"
+      },
+      {
+        "key": "D",
+        "text": "62.5%"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Boys = 32 - 18 = 14. Percent = (14/32) * 100 = 43.75%.",
+    "check_expression": "((32 - 18) / 32) * 100",
+    "metadata": {
+      "content_hash": "sha256:8ad8e2b1b1b2fb9cf5060181b22d715b3a9001d2e18c56e7c2d8aa7a241a4c3f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:36.020Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000006",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A number is increased by 25% and the result is 60. What was the original number?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "45"
+      },
+      {
+        "key": "B",
+        "text": "48"
+      },
+      {
+        "key": "C",
+        "text": "50"
+      },
+      {
+        "key": "D",
+        "text": "75"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Let x be the original number: x * 1.25 = 60, so x = 60 / 1.25 = 48.",
+    "check_expression": "60 / 1.25",
+    "metadata": {
+      "content_hash": "sha256:27bc964972b3f1a76c929d71df5e941d083860f04125e3ec1bdeb64d9a6dc56f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:37.442Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000007",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Two pumps fill a tank at different rates. Pump A can fill the tank alone in 6 hours, and Pump B can fill it alone in 3 hours. Working together, how many hours will it take them to fill the tank?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "1.5 hours"
+      },
+      {
+        "key": "B",
+        "text": "2 hours"
+      },
+      {
+        "key": "C",
+        "text": "2.5 hours"
+      },
+      {
+        "key": "D",
+        "text": "4.5 hours"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Combined rate = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 tank per hour. Time = 1 / (1/2) = 2 hours.",
+    "check_expression": "1 / (1/6 + 1/3)",
+    "metadata": {
+      "content_hash": "sha256:27011672744322d1ea6d1cc631f73c8686bccb3d2483f56537a6fffb0749de04",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:39.288Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000008",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A shirt originally priced at $50 is discounted by 20%, and then the discounted price is further reduced by 10%. What is the final price of the shirt?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$34.00"
+      },
+      {
+        "key": "B",
+        "text": "$35.00"
+      },
+      {
+        "key": "C",
+        "text": "$36.00"
+      },
+      {
+        "key": "D",
+        "text": "$40.00"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "After 20% off: 50 * 0.8 = 40. After additional 10% off: 40 * 0.9 = $36.00.",
+    "check_expression": "50 * 0.8 * 0.9",
+    "metadata": {
+      "content_hash": "sha256:2e2da0526d628f07167dddc72473c91a820731f052288329fd3a008b8973f69b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:40.928Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000009",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "The ratio of boys to girls at a school dance is 5:7. If there are 84 people at the dance, how many are boys?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "30"
+      },
+      {
+        "key": "B",
+        "text": "35"
+      },
+      {
+        "key": "C",
+        "text": "36"
+      },
+      {
+        "key": "D",
+        "text": "49"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Total ratio parts = 5 + 7 = 12. Each part = 84/12 = 7. Boys = 5 * 7 = 35.",
+    "check_expression": "(84 / (5 + 7)) * 5",
+    "metadata": {
+      "content_hash": "sha256:2a4b71adaf5eeedfbe1dffd808b75701fe0ae17e7e02fe35feac4ca4272c6567",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:42.663Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000010",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A machine produces 450 parts in 6 hours at a constant rate. How many parts does it produce in 10 hours?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "650"
+      },
+      {
+        "key": "B",
+        "text": "700"
+      },
+      {
+        "key": "C",
+        "text": "750"
+      },
+      {
+        "key": "D",
+        "text": "800"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Rate = 450/6 = 75 parts per hour. In 10 hours: 75 * 10 = 750 parts.",
+    "check_expression": "(450 / 6) * 10",
+    "metadata": {
+      "content_hash": "sha256:634aca7785fdf53d7219a561554d696555e03f167c5349be5b417e618be45e56",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:43.908Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000012",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A map has a scale where 1 inch represents 25 miles. If two cities are 3.5 inches apart on the map, what is the actual distance between them?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "70 miles"
+      },
+      {
+        "key": "B",
+        "text": "77.5 miles"
+      },
+      {
+        "key": "C",
+        "text": "82.5 miles"
+      },
+      {
+        "key": "D",
+        "text": "87.5 miles"
+      }
+    ],
+    "answer_key": "D",
+    "explanation": "Distance = 3.5 * 25 = 87.5 miles.",
+    "check_expression": "3.5 * 25",
+    "metadata": {
+      "content_hash": "sha256:4099e983865037cd1a44193b408d15cb3599b88700107419db57ad30c130d105",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:46.977Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000014",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "An investment of $2,000 earns simple interest at an annual rate of 6%. How much interest is earned after 3 years?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$120"
+      },
+      {
+        "key": "B",
+        "text": "$240"
+      },
+      {
+        "key": "C",
+        "text": "$360"
+      },
+      {
+        "key": "D",
+        "text": "$600"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Simple interest = Principal * rate * time = 2000 * 0.06 * 3 = $360.",
+    "check_expression": "2000 * 0.06 * 3",
+    "metadata": {
+      "content_hash": "sha256:e6986b90793b292b58b5b276bf4ca01933176f5237eeaec9decb2d8edb145eda",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:51.884Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000015",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A recipe requires ingredients in the ratio 2:3:5 for sugar, butter, and flour respectively. If a baker uses 12 cups of butter, how many total cups of all three ingredients does she use?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "24"
+      },
+      {
+        "key": "B",
+        "text": "36"
+      },
+      {
+        "key": "C",
+        "text": "40"
+      },
+      {
+        "key": "D",
+        "text": "48"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Since butter corresponds to 3 parts and equals 12 cups, each part = 4 cups. Total parts = 2+3+5 = 10, so total = 10 * 4 = 40 cups.",
+    "check_expression": "(12 / 3) * (2 + 3 + 5)",
+    "metadata": {
+      "content_hash": "sha256:3044e73a9858945996854c31e521f6885e65e68f9685edf7081550a8bfaed62e",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:55.383Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000016",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A population of bacteria doubles every 4 hours. If there are 500 bacteria at the start, how many bacteria will there be after 12 hours?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "2000"
+      },
+      {
+        "key": "B",
+        "text": "3000"
+      },
+      {
+        "key": "C",
+        "text": "4000"
+      },
+      {
+        "key": "D",
+        "text": "6000"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "In 12 hours there are 12/4 = 3 doubling periods. So population = 500 * 2^3 = 500 * 8 = 4000.",
+    "check_expression": "500 * (2 ** (12 / 4))",
+    "metadata": {
+      "content_hash": "sha256:cd4eaeea17fde61bae5a5981c83b8c0a4ddd613de626230e0f30b9ab149ec4cc",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:11:56.917Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000017",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A store marks up a jacket that costs $40 by 25% to set its retail price. During a sale, the retail price is discounted by 20%. What is the final sale price of the jacket?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$38.00"
+      },
+      {
+        "key": "B",
+        "text": "$40.00"
+      },
+      {
+        "key": "C",
+        "text": "$42.00"
+      },
+      {
+        "key": "D",
+        "text": "$36.00"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Markup: 40 * 1.25 = 50. Discount: 50 * 0.80 = 40. The final sale price is $40.00.",
+    "check_expression": "40 * 1.25 * 0.80",
+    "metadata": {
+      "content_hash": "sha256:fb6dde984a2d296ed13a9e2ef3e86b0ea9a276d013c04b10300eb98823f49d27",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:24.683Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000018",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A recipe calls for 3 cups of flour for every 2 cups of sugar. If a baker uses 15 cups of flour, how many cups of sugar should be used to keep the ratio the same?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "9"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "The ratio 3:2 scales up by a factor of 5 (since 15/3 = 5), so sugar = 2 * 5 = 10 cups.",
+    "check_expression": "15 / 3 * 2",
+    "metadata": {
+      "content_hash": "sha256:e8a3b60cd4f54a2a85c2b94eb5b6dad0cc7e8b7fc1999a8f5116f7dbcb8ba8e1",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:29.922Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000019",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A car travels 210 miles in 3.5 hours at a constant speed. At this same rate, how many miles will it travel in 5 hours?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "280"
+      },
+      {
+        "key": "B",
+        "text": "290"
+      },
+      {
+        "key": "C",
+        "text": "300"
+      },
+      {
+        "key": "D",
+        "text": "310"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Rate = 210 / 3.5 = 60 mph. Distance in 5 hours = 60 * 5 = 300 miles.",
+    "check_expression": "(210 / 3.5) * 5",
+    "metadata": {
+      "content_hash": "sha256:09412031fc50b700cd9cb7dd9c32f6c280c41f87d3ea4a2098c802ab19c9810c",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:31.541Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000020",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "In a school of 800 students, 35% participate in the after-school sports program. Of those sports participants, 40% also participate in the music program. How many students participate in both sports and music?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "112"
+      },
+      {
+        "key": "B",
+        "text": "120"
+      },
+      {
+        "key": "C",
+        "text": "128"
+      },
+      {
+        "key": "D",
+        "text": "140"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Sports participants = 800 * 0.35 = 280. Of these, music participants = 280 * 0.40 = 112.",
+    "check_expression": "800 * 0.35 * 0.40",
+    "metadata": {
+      "content_hash": "sha256:d2d07ca4493241eeaecabfd77a41ea0b59537b668af76f789064278a3631a9ae",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:33.054Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000022",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A phone plan charges a flat fee of $20 per month plus $0.10 per text message sent. If a customer's bill for the month was $35, how many text messages did the customer send?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "120"
+      },
+      {
+        "key": "B",
+        "text": "150"
+      },
+      {
+        "key": "C",
+        "text": "175"
+      },
+      {
+        "key": "D",
+        "text": "200"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract the flat fee: 35 - 20 = 15. Divide by cost per text: 15 / 0.10 = 150 texts.",
+    "check_expression": "(35 - 20) / 0.10",
+    "metadata": {
+      "content_hash": "sha256:5001a80d65ae194fb7f8732f19cab9d41333d9e8bd259142048ed89b0b1d5818",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:40.845Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000023",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A jar contains only red and blue marbles in the ratio 5:3. If there are 24 blue marbles, how many total marbles are in the jar?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "56"
+      },
+      {
+        "key": "B",
+        "text": "60"
+      },
+      {
+        "key": "C",
+        "text": "64"
+      },
+      {
+        "key": "D",
+        "text": "72"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Since blue corresponds to 3 parts and there are 24 blue marbles, each part = 24/3 = 8. Total parts = 5+3 = 8, so total marbles = 8 * 8 = 64.",
+    "check_expression": "(24 / 3) * (5 + 3)",
+    "metadata": {
+      "content_hash": "sha256:d575e82fb7fe735f9e376e8e53984c1810b676e0e01b629f3f334a73f8ddf213",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:42.322Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000024",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "A worker is paid $18 per hour for the first 40 hours in a week and 1.5 times that rate for any hours beyond 40. If the worker works 46 hours in one week, what is their total pay for the week?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$828"
+      },
+      {
+        "key": "B",
+        "text": "$882"
+      },
+      {
+        "key": "C",
+        "text": "$900"
+      },
+      {
+        "key": "D",
+        "text": "$918"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Regular pay = 40 * 18 = 720. Overtime hours = 6, overtime rate = 18 * 1.5 = 27, overtime pay = 6 * 27 = 162. Total = 720 + 162 = 882.",
+    "check_expression": "(40 * 18) + ((46 - 40) * (18 * 1.5))",
+    "metadata": {
+      "content_hash": "sha256:33f0b21f5d37c27be74f68b774500d71e29bb14d6f4d182575e90222d4357e76",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:43.910Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000025",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A number is increased by 20% and then the result is decreased by 20%. If the original number was 150, what is the final result?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "150"
+      },
+      {
+        "key": "B",
+        "text": "144"
+      },
+      {
+        "key": "C",
+        "text": "148"
+      },
+      {
+        "key": "D",
+        "text": "140"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Increase: 150 * 1.20 = 180. Decrease: 180 * 0.80 = 144. Note the final result is not equal to the original due to the changing base.",
+    "check_expression": "150 * 1.20 * 0.80",
+    "metadata": {
+      "content_hash": "sha256:9bbadf1b784ddabd08bcde820769354f44ec39a3d31cc9f2bdd621a04dd8a75f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:45.889Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000026",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Three friends split the cost of a $63 dinner bill in the ratio 2:3:4. How much does the friend with the largest share pay?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$21"
+      },
+      {
+        "key": "B",
+        "text": "$24"
+      },
+      {
+        "key": "C",
+        "text": "$28"
+      },
+      {
+        "key": "D",
+        "text": "$32"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Total parts = 2+3+4 = 9. Each part = 63/9 = 7. Largest share = 4 parts * 7 = 28.",
+    "check_expression": "(63 / (2+3+4)) * 4",
+    "metadata": {
+      "content_hash": "sha256:ed0da6c263f6a8ecd00f2e9c185eddda6e0da10cfbbd1cdd67d1667c807eef41",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:47.756Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000027",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A tank is being filled with water at a rate of 15 gallons every 4 minutes. At this rate, how many gallons will be in the tank after 20 minutes?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "60"
+      },
+      {
+        "key": "B",
+        "text": "65"
+      },
+      {
+        "key": "C",
+        "text": "70"
+      },
+      {
+        "key": "D",
+        "text": "75"
+      }
+    ],
+    "answer_key": "D",
+    "explanation": "Rate = 15/4 gallons per minute. In 20 minutes: (15/4) * 20 = 75 gallons.",
+    "check_expression": "(15 / 4) * 20",
+    "metadata": {
+      "content_hash": "sha256:b6b3f39645012f3894b550b09339aaff90bf21ae128a2f90952b2b443c482767",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:49.348Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000028",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A survey found that 60% of students in a school prefer pizza for lunch. Of the students who do NOT prefer pizza, 25% prefer tacos. If the school has 400 students, how many students prefer tacos?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "30"
+      },
+      {
+        "key": "B",
+        "text": "40"
+      },
+      {
+        "key": "C",
+        "text": "50"
+      },
+      {
+        "key": "D",
+        "text": "60"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Students who do not prefer pizza = 400 * 0.40 = 160. Of these, tacos = 160 * 0.25 = 40.",
+    "check_expression": "400 * 0.40 * 0.25",
+    "metadata": {
+      "content_hash": "sha256:3e86ddf125546b6d0f03c7dd356afca070fa456987273eb2b1bb64042d2fbac3",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:51.430Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000029",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A map has a scale where 2 inches represents 15 miles. If two cities are 7 inches apart on the map, what is the actual distance between them in miles?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "45"
+      },
+      {
+        "key": "B",
+        "text": "52.5"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "65"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Set up proportion: 2 inches / 15 miles = 7 inches / x miles. Solve: x = (7 * 15) / 2 = 52.5 miles.",
+    "check_expression": "(7 * 15) / 2",
+    "metadata": {
+      "content_hash": "sha256:e1a7b5e44a9050f3babcdb9c3380d625aad3c08f3397fb098a1de0fd4f37bb3d",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:52.812Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000030",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "A store is having a sale where you save 30% on your total purchase if you buy 3 or more items. If a customer buys items totaling $84 before the discount, how much do they pay after the discount?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "$54.60"
+      },
+      {
+        "key": "B",
+        "text": "$58.80"
+      },
+      {
+        "key": "C",
+        "text": "$62.40"
+      },
+      {
+        "key": "D",
+        "text": "$65.20"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Discount amount = 84 * 0.30 = 25.20. Final price = 84 - 25.20 = 58.80.",
+    "check_expression": "84 - (84 * 0.30)",
+    "metadata": {
+      "content_hash": "sha256:fe8ce3467de8d7644c7411a49f24f0e9365450bcfed6062d45186e2ea5b5eb6f",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:55.100Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-arithmetic_word_problem-000031",
+    "subject": "math",
+    "type": "arithmetic_word_problem",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "A machine produces 450 parts in 6 hours. If the machine's rate is increased by 20%, how many parts will it produce in 6 hours at the new rate?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "500"
+      },
+      {
+        "key": "B",
+        "text": "520"
+      },
+      {
+        "key": "C",
+        "text": "540"
+      },
+      {
+        "key": "D",
+        "text": "560"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Original rate produces 450 parts in 6 hours. A 20% increase in rate means 20% more parts in the same time: 450 * 1.20 = 540 parts.",
+    "check_expression": "450 * 1.20",
+    "metadata": {
+      "content_hash": "sha256:b9d8621276873803eb1594954ee0b859d4a31955b680152ea7550fdc0d61d0a3",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:13:57.094Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  }
+]

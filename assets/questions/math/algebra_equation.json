@@ -1,1 +1,1172 @@
-[]
+[
+  {
+    "id": "math-algebra_equation-000000",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: 3x + 7 = 22",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5.",
+    "check_expression": "(22-7)/3",
+    "metadata": {
+      "content_hash": "sha256:f71e9f5cee5462c107ae48624dd37ce5c3fbf1f3c80263acc98a41e3659bfaef",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:19.380Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000001",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: 5x - 4 = 26",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Add 4 to both sides: 5x = 30. Divide by 5: x = 6.",
+    "check_expression": "(26+4)/5",
+    "metadata": {
+      "content_hash": "sha256:696a4384de4402815364102044dc91a524265f862517e560cb8a5580dfd2235c",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:21.142Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000002",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: x/4 + 3 = 10",
+    "choices": [
+      {
+        "key": "A",
+        "text": "21"
+      },
+      {
+        "key": "B",
+        "text": "24"
+      },
+      {
+        "key": "C",
+        "text": "28"
+      },
+      {
+        "key": "D",
+        "text": "32"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Subtract 3 from both sides: x/4 = 7. Multiply by 4: x = 28.",
+    "check_expression": "(10-3)*4",
+    "metadata": {
+      "content_hash": "sha256:b6598f60fda5fa1f0b5ac888325ac117c5fa472efb548ba37f4d89ae419f74c5",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:23.327Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000003",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 2(x + 5) = 18",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "8"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Divide both sides by 2: x + 5 = 9. Subtract 5: x = 4.",
+    "check_expression": "(18/2)-5",
+    "metadata": {
+      "content_hash": "sha256:4f65dfcd2ed00189675a81eb8e6a3f085134ac56eddbbbe029d478e7c33eb76e",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:24.897Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000004",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 4x - 9 = 2x + 11",
+    "choices": [
+      {
+        "key": "A",
+        "text": "8"
+      },
+      {
+        "key": "B",
+        "text": "9"
+      },
+      {
+        "key": "C",
+        "text": "10"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Subtract 2x from both sides: 2x - 9 = 11. Add 9: 2x = 20. Divide by 2: x = 10.",
+    "check_expression": "(11+9)/2",
+    "metadata": {
+      "content_hash": "sha256:91bbbc6153cdbeaffd43090215434df6a076c9040378d350f679bea2282eb199",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:26.666Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000005",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 3(2x - 1) = 15",
+    "choices": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Divide both sides by 3: 2x - 1 = 5. Add 1: 2x = 6. Divide by 2: x = 3.",
+    "check_expression": "((15/3)+1)/2",
+    "metadata": {
+      "content_hash": "sha256:31ace14253594aa46e49a154f1ed46abde39006705c690589255e156998a674b",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:28.227Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000006",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 7x + 2 = 5x + 14",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Subtract 5x from both sides: 2x + 2 = 14. Subtract 2: 2x = 12. Divide by 2: x = 6.",
+    "check_expression": "(14-2)/2",
+    "metadata": {
+      "content_hash": "sha256:b8ac254850e12c17a8a9ae9cfb7bc5e4627d9a6d98999e6f3c97d9f79cfc0e59",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:32.737Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000007",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: (x - 3)/2 = 6",
+    "choices": [
+      {
+        "key": "A",
+        "text": "9"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "18"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Multiply both sides by 2: x - 3 = 12. Add 3: x = 15.",
+    "check_expression": "(6*2)+3",
+    "metadata": {
+      "content_hash": "sha256:9e25574062fd003c3160a71d09a4e0ce33c2bfcb3fec9e87355ffe62dc41e7f2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:35.031Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000008",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 6x + 3 = 3x + 18",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "5"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Subtract 3x from both sides: 3x + 3 = 18. Subtract 3: 3x = 15. Divide by 3: x = 5.",
+    "check_expression": "(18-3)/3",
+    "metadata": {
+      "content_hash": "sha256:c581014c6125904e25b11570cebd6ed2c09f766e6e2f6a33a76734809559b567",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:36.639Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000009",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: -2x + 5 = 17",
+    "choices": [
+      {
+        "key": "A",
+        "text": "-8"
+      },
+      {
+        "key": "B",
+        "text": "-6"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract 5 from both sides: -2x = 12. Divide by -2: x = -6.",
+    "check_expression": "(17-5)/(-2)",
+    "metadata": {
+      "content_hash": "sha256:f7e3a378f783f70c1156af849ef1a979ee0ef8a05b5c397d3773692c3c4389b2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:38.480Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000010",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Solve for x: 4(x - 2) = 2x + 6",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Distribute: 4x - 8 = 2x + 6. Subtract 2x: 2x - 8 = 6. Add 8: 2x = 14. Divide by 2: x = 7.",
+    "check_expression": "(6+8)/2",
+    "metadata": {
+      "content_hash": "sha256:d2ce17c12514b196b103dddea77f00e7fc43566f070519765f0254fb7af375a2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:40.221Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000011",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: x/3 - 5 = -2",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Add 5 to both sides: x/3 = 3. Multiply by 3: x = 9.",
+    "check_expression": "(-2+5)*3",
+    "metadata": {
+      "content_hash": "sha256:3f5d98cdcdc1f22635b7426e28866a6915d62c5b074b3bb603d3ca7849de21e4",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:41.791Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000012",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: 8 - 3x = 2",
+    "choices": [
+      {
+        "key": "A",
+        "text": "2"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "4"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 8 from both sides: -3x = -6. Divide by -3: x = 2.",
+    "check_expression": "(2-8)/(-3)",
+    "metadata": {
+      "content_hash": "sha256:f2edf1fb8444a2a5fe2527b38ea7fa7d371dbc1b546cd69f86ca78a4c02a8357",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:43.327Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000013",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Solve for x: 5(x + 1) - 2x = 20",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Distribute: 5x + 5 - 2x = 20, which simplifies to 3x + 5 = 20. Subtract 5: 3x = 15. Divide by 3: x = 5.",
+    "check_expression": "(20-5)/3",
+    "metadata": {
+      "content_hash": "sha256:698599a917134f2db67f776d1cf66129c31e2950802d3d253dd9cb0334ecf654",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:44.761Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000014",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 2x + 9 = 6x - 7",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "5"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract 2x from both sides: 9 = 4x - 7. Add 7: 16 = 4x. Divide by 4: x = 4.",
+    "check_expression": "(9+7)/4",
+    "metadata": {
+      "content_hash": "sha256:406e3f04482a82909abd4361f575ed8ed8d8a6bbcc0d3a3ec2480298fe4a51ec",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:12:46.153Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000015",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: x + 9 = 17",
+    "choices": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "8"
+      },
+      {
+        "key": "C",
+        "text": "26"
+      },
+      {
+        "key": "D",
+        "text": "-8"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract 9 from both sides: x = 17 - 9 = 8.",
+    "check_expression": "17 - 9",
+    "metadata": {
+      "content_hash": "sha256:58e2862eb7cf384bb4fec40ad9cd4e02042c289a34cd19333557c8f93b9184bc",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:17.622Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000016",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: x - 5 = 12",
+    "choices": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "17"
+      },
+      {
+        "key": "C",
+        "text": "-7"
+      },
+      {
+        "key": "D",
+        "text": "60"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Add 5 to both sides: x = 12 + 5 = 17.",
+    "check_expression": "12 + 5",
+    "metadata": {
+      "content_hash": "sha256:00b9d1c3100f9adb3ff9b50f65fc77394b505d528cde81027201a6e4c2d3aa70",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:19.423Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000017",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: 4x = 28",
+    "choices": [
+      {
+        "key": "A",
+        "text": "24"
+      },
+      {
+        "key": "B",
+        "text": "32"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "112"
+      }
+    ],
+    "answer_key": "C",
+    "explanation": "Divide both sides by 4: x = 28 / 4 = 7.",
+    "check_expression": "28 / 4",
+    "metadata": {
+      "content_hash": "sha256:231ac55294142d3777b3bc18f396df45bf944a9994d42d56452a76fb182474cb",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:21.412Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000018",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: x / 3 = 9",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "27"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "6"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Multiply both sides by 3: x = 9 * 3 = 27.",
+    "check_expression": "9 * 3",
+    "metadata": {
+      "content_hash": "sha256:fe7e31ac15117f6dadb45ba20a8459dc3670abeda99ef23a64c58cc22147e952",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:22.967Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000019",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 2x + 5 = 19",
+    "choices": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "9.5"
+      },
+      {
+        "key": "D",
+        "text": "14"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 5: 2x = 14. Divide by 2: x = 7.",
+    "check_expression": "(19 - 5) / 2",
+    "metadata": {
+      "content_hash": "sha256:2937626086ec81a2114755a90a314235261b7bd40d47a70904b5eec8c60c251c",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:24.687Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000020",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 3x - 4 = 17",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "7"
+      },
+      {
+        "key": "C",
+        "text": "13"
+      },
+      {
+        "key": "D",
+        "text": "6.33"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Add 4: 3x = 21. Divide by 3: x = 7.",
+    "check_expression": "(17 + 4) / 3",
+    "metadata": {
+      "content_hash": "sha256:37dcb5cae0d2b3a83aaddd760fe4b58cc7d79b677747ec29900300171e8018fb",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:26.942Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000021",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 5x + 3 = 2x + 18",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "7"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 2x from both sides: 3x + 3 = 18. Subtract 3: 3x = 15. Divide by 3: x = 5.",
+    "check_expression": "(18 - 3) / 3",
+    "metadata": {
+      "content_hash": "sha256:14f58ca4d8da143b1d994842b14e4beb134fb896861d02c505964f8e6b0edff8",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:32.955Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000022",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "easy",
+    "passage_id": null,
+    "prompt": "Solve for x: 7 - x = 2",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "-5"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "4.5"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 7 from both sides: -x = -5, so x = 5.",
+    "check_expression": "7 - 2",
+    "metadata": {
+      "content_hash": "sha256:868ae2c704837c7840665340e2b6c01f62c0dbbdf87b3ed49c007eadb264bf91",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:34.454Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000023",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 2(x + 3) = 16",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "8"
+      },
+      {
+        "key": "C",
+        "text": "13"
+      },
+      {
+        "key": "D",
+        "text": "6.5"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Divide both sides by 2: x + 3 = 8. Subtract 3: x = 5.",
+    "check_expression": "(16 / 2) - 3",
+    "metadata": {
+      "content_hash": "sha256:f341b70b580137fb48a8d8d19d4a9abe6e733b72b0872818e01277ee57a9eef6",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:47.135Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000024",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 3(2x - 1) = 27",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "4.5"
+      },
+      {
+        "key": "D",
+        "text": "14"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Divide both sides by 3: 2x - 1 = 9. Add 1: 2x = 10. Divide by 2: x = 5.",
+    "check_expression": "((27 / 3) + 1) / 2",
+    "metadata": {
+      "content_hash": "sha256:c18c58cb403cbc68843848b7fcb195b22032a7f10361f50b0f2663f14ff81387",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:48.694Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000025",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: x/4 + 2 = 9",
+    "choices": [
+      {
+        "key": "A",
+        "text": "28"
+      },
+      {
+        "key": "B",
+        "text": "36"
+      },
+      {
+        "key": "C",
+        "text": "7"
+      },
+      {
+        "key": "D",
+        "text": "44"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 2: x/4 = 7. Multiply by 4: x = 28.",
+    "check_expression": "(9 - 2) * 4",
+    "metadata": {
+      "content_hash": "sha256:5d3506ecf7ada2ef361acf8c9229959db1dfe937d74299c760efb961e8c4b3f2",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:50.793Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000026",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: 6x - 5 = 3x + 10",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "15"
+      },
+      {
+        "key": "D",
+        "text": "1.67"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Subtract 3x from both sides: 3x - 5 = 10. Add 5: 3x = 15. Divide by 3: x = 5.",
+    "check_expression": "(10 + 5) / 3",
+    "metadata": {
+      "content_hash": "sha256:43fc2ac988b43af632721bdcf72eedd3a105b4d3545504b2a12d6f285ecf3b17",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:52.224Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000027",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Solve for x: -3x + 4 = -11",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "-5"
+      },
+      {
+        "key": "C",
+        "text": "-2.33"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Subtract 4: -3x = -15. Divide by -3: x = 5.",
+    "check_expression": "(-11 - 4) / (-3)",
+    "metadata": {
+      "content_hash": "sha256:ec3137749eedb8bdd4cf88811f432b1bcefe85d3e1b73cf0b6b775191551989d",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:53.880Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000028",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Solve for x: 4(x - 2) = 2(x + 6)",
+    "choices": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "10"
+      },
+      {
+        "key": "C",
+        "text": "14"
+      },
+      {
+        "key": "D",
+        "text": "8"
+      }
+    ],
+    "answer_key": "B",
+    "explanation": "Expand: 4x - 8 = 2x + 12. Subtract 2x: 2x - 8 = 12. Add 8: 2x = 20. Divide by 2: x = 10.",
+    "check_expression": "(12 + 8) / 2",
+    "metadata": {
+      "content_hash": "sha256:599727c2d2003f1b4083b7bce0e3b5fd338e694c72db76f5370baee04b7d8566",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:55.488Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "math-algebra_equation-000029",
+    "subject": "math",
+    "type": "algebra_equation",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Solve for x: (x + 5)/2 = 3x - 5",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "2"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "answer_key": "A",
+    "explanation": "Multiply both sides by 2: x + 5 = 6x - 10. Subtract x: 5 = 5x - 10. Add 10: 15 = 5x. Divide by 5: x = 3.",
+    "check_expression": "15 / 5",
+    "metadata": {
+      "content_hash": "sha256:c5e57e6e8365ebbb8624ed025af8b2ebd1c72fdc999c4e923482c2ae58aa5aeb",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T09:14:57.036Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": true,
+      "verifier_agreed": true,
+      "reviewed": true,
+      "reviewer": null
+    }
+  }
+]
