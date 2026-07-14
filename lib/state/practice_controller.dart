@@ -79,13 +79,6 @@ class PracticeController extends Notifier<PracticeState> {
     await ProgressService().recordAttempt(attempt);
   }
 
-  void showChooser() {
-    state = PracticeState(
-      attempts: state.attempts,
-      askedIdsByType: state.askedIdsByType,
-    );
-  }
-
   void reset() => state = const PracticeState();
 }
 

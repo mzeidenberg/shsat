@@ -46,6 +46,7 @@ class _ScoreCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final score = estimateScore(attempts);
+    final remaining = kMinAttemptsForScoreEstimate - attempts.length;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -61,7 +62,9 @@ class _ScoreCard extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               score == null
-                  ? 'Answer a few more questions to see your estimated score.'
+                  ? 'A reliable estimate needs at least $kMinAttemptsForScoreEstimate answered '
+                      'questions. You have ${attempts.length} so far — answer $remaining more to '
+                      'unlock your estimate.'
                   : 'Rough estimate based on your last 30 answers — not an official SHSAT score.',
               style: const TextStyle(fontSize: 12, color: Colors.grey, fontStyle: FontStyle.italic),
             ),

@@ -160,10 +160,35 @@ class _QuestionView extends StatelessWidget {
             const SizedBox(height: 8),
             Text(question.explanation, style: const TextStyle(fontStyle: FontStyle.italic)),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => ref.read(practiceControllerProvider.notifier).showChooser(),
-              child: const Text('Next question'),
+            SizedBox(
+              width: 280,
+              child: ElevatedButton(
+                onPressed: bank.forType(question.type).isEmpty
+                    ? null
+                    : () => ref
+                        .read(practiceControllerProvider.notifier)
+                        .pickType(question.type, bank),
+                style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16)),
+                child: Text('Another ${question.type.label} question'),
+              ),
             ),
+            const SizedBox(height: 20),
+            const Text('Or choose a different type', style: TextStyle(color: Colors.grey)),
+            const SizedBox(height: 12),
+            for (final type in QuestionType.values.where((t) => t != question.type))
+              Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: SizedBox(
+                  width: 280,
+                  child: OutlinedButton(
+                    onPressed: bank.forType(type).isEmpty
+                        ? null
+                        : () => ref.read(practiceControllerProvider.notifier).pickType(type, bank),
+                    style: OutlinedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16)),
+                    child: Text('${type.label} (${bank.forType(type).length})'),
+                  ),
+                ),
+              ),
           ],
         ],
       ),
