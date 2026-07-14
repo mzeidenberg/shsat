@@ -169,7 +169,7 @@ class _QuestionView extends StatelessWidget {
                         .read(practiceControllerProvider.notifier)
                         .pickType(question.type, bank),
                 style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16)),
-                child: Text('Another ${question.type.label} question'),
+                child: Text('Another ${question.type.label} question (${bank.forType(question.type).length})'),
               ),
             ),
             const SizedBox(height: 20),
