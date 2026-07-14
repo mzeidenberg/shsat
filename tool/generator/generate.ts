@@ -3,7 +3,14 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Choice, Passage, Question, QuestionType, Subject } from "./types.js";
 import { buildInstruction, SYSTEM_PROMPT } from "./prompts.js";
-import { contentHash, hasLeakedArtifact, looksTruncated, readJsonArray, writeJsonArray } from "./util.js";
+import {
+  contentHash,
+  hasLeakedArtifact,
+  looksTruncated,
+  readJsonArray,
+  sharesTopicWithPassage,
+  writeJsonArray,
+} from "./util.js";
 import { deterministicMathCheck, verifyWithIndependentModel } from "./verify.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -235,6 +242,19 @@ async function main() {
       q.choices.some((c) => hasLeakedArtifact(c?.text ?? ""));
     if (malformed) {
       console.warn("  skipping malformed question from model output");
+      continue;
+    }
+
+    // Observed failure mode specific to reading comprehension: the model
+    // occasionally writes a question about an entirely different topic than
+    // the passage it's paired with (e.g. a "keystone species" question about
+    // beavers attached to a passage about earthworms).
+    if (
+      type === "reading_comprehension" &&
+      passage &&
+      !sharesTopicWithPassage(`${q.prompt} ${q.explanation}`, passage.text)
+    ) {
+      console.warn("  skipping question that doesn't match its passage's topic");
       continue;
     }
 

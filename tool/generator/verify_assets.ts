@@ -1,7 +1,7 @@
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Passage, Question, QuestionType } from "./types.js";
-import { hasLeakedArtifact, looksTruncated, readJsonArray } from "./util.js";
+import { hasLeakedArtifact, looksTruncated, readJsonArray, sharesTopicWithPassage } from "./util.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const ASSETS_DIR = join(ROOT, "assets", "questions");
@@ -22,9 +22,11 @@ const FILES: Array<{ subject: "math" | "ela"; type: QuestionType }> = [
 
 async function main() {
   const errors: string[] = [];
+  const warnings: string[] = [];
 
   const passages = await readJsonArray<Passage>(join(ASSETS_DIR, "ela", "passages.json"));
   const passageIds = new Set(passages.map((p) => p.id));
+  const passagesById = new Map(passages.map((p) => [p.id, p]));
 
   for (const p of passages) {
     const where = `passage/${p.id}`;
@@ -81,6 +83,15 @@ async function main() {
           errors.push(`${where}: reading_comprehension question missing passage_id`);
         } else if (!passageIds.has(q.passage_id)) {
           errors.push(`${where}: passage_id "${q.passage_id}" doesn't exist in passages.json`);
+        } else {
+          const passage = passagesById.get(q.passage_id)!;
+          // This is a cheap word-overlap heuristic with a real false-positive rate
+          // (confirmed via LLM spot-check: ~40% of its flags on the shipped bank
+          // were paraphrased-but-correct questions, not genuine mismatches). Treat
+          // it as a signal for manual/LLM review, not proof of a bug.
+          if (!sharesTopicWithPassage(`${q.prompt} ${q.explanation}`, passage.text)) {
+            warnings.push(`${where}: doesn't appear to be about the same topic as its passage "${passage.title}"`);
+          }
         }
       } else if (q.passage_id) {
         errors.push(`${where}: non-reading-comprehension question unexpectedly has a passage_id`);
@@ -120,12 +131,18 @@ async function main() {
   }
 
   console.log(`Checked ${allQuestions.length} questions across ${FILES.length} files, ${passages.length} passages.`);
+
+  if (warnings.length > 0) {
+    console.warn(`\n${warnings.length} warning(s) (topic-overlap heuristic — review manually, not build-blocking):`);
+    for (const w of warnings) console.warn(`  - ${w}`);
+  }
+
   if (errors.length === 0) {
-    console.log("No issues found.");
+    console.log("\nNo errors found.");
     return;
   }
 
-  console.error(`\n${errors.length} issue(s) found:`);
+  console.error(`\n${errors.length} error(s) found:`);
   for (const e of errors) console.error(`  - ${e}`);
   process.exit(1);
 }

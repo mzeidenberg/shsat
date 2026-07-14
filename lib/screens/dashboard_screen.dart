@@ -46,7 +46,7 @@ class _ScoreCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final score = estimateScore(attempts);
-    final remaining = kMinAttemptsForScoreEstimate - attempts.length;
+    final needed = attemptsStillNeededForEstimate(attempts);
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -60,14 +60,25 @@ class _ScoreCard extends StatelessWidget {
               style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            Text(
-              score == null
-                  ? 'A reliable estimate needs at least $kMinAttemptsForScoreEstimate answered '
-                      'questions. You have ${attempts.length} so far — answer $remaining more to '
-                      'unlock your estimate.'
-                  : 'Rough estimate based on your last 30 answers — not an official SHSAT score.',
-              style: const TextStyle(fontSize: 12, color: Colors.grey, fontStyle: FontStyle.italic),
-            ),
+            if (score == null) ...[
+              Text(
+                'A reliable estimate needs at least $kMinAttemptsPerCategoryForScoreEstimate '
+                'answered questions in each category (so it reflects both Math and ELA, not just '
+                'whichever type you practiced most recently).',
+                style: const TextStyle(fontSize: 12, color: Colors.grey, fontStyle: FontStyle.italic),
+              ),
+              const SizedBox(height: 8),
+              for (final entry in needed.entries)
+                Text(
+                  '• ${entry.key.label}: ${entry.value} more needed',
+                  style: const TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+            ] else
+              const Text(
+                'Rough estimate weighting Math and ELA 50/50 based on your recent answers in each '
+                'category — not an official SHSAT score.',
+                style: TextStyle(fontSize: 12, color: Colors.grey, fontStyle: FontStyle.italic),
+              ),
           ],
         ),
       ),
