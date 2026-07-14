@@ -14,6 +14,7 @@ class ShsatTutorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SHSAT Tutor',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(colorSchemeSeed: Colors.indigo, useMaterial3: true),
       home: const HomeScreen(),
     );

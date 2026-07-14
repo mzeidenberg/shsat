@@ -1,1 +1,78 @@
-[]
+[
+  {
+    "id": "ela-grammar_edit-000077",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "medium",
+    "passage_id": null,
+    "prompt": "Which choice best improves the sentence?\n\nMy little brother is scared of thunderstorms, spiders, and getting lost, but not scared of the dark.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "My little brother is scared of thunderstorms, spiders, and getting lost, but he is not scared of the dark."
+      },
+      {
+        "key": "B",
+        "text": "My little brother is scared of thunderstorms, spiders, getting lost, but not the dark."
+      },
+      {
+        "key": "C",
+        "text": "My little brother is scared of thunderstorms, spiders, and getting lost, however not of the dark."
+      },
+      {
+        "key": "D",
+        "text": "No change is needed."
+      }
+    ],
+    "answer_key": "D",
+    "explanation": "The original sentence is grammatically correct and clearly parallel, so no revision is necessary.",
+    "metadata": {
+      "content_hash": "sha256:f1693a00e1e1ffb88c2e86d59a8907a2ea68d169bb89e53a4c010c88cc583965",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T12:02:06.175Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": false,
+      "reviewed": false,
+      "reviewer": null
+    }
+  },
+  {
+    "id": "ela-grammar_edit-000103",
+    "subject": "ela",
+    "type": "grammar_edit",
+    "difficulty": "hard",
+    "passage_id": null,
+    "prompt": "Choose the revision that corrects the misplaced modifier.\n\nCovered in mud, Jenna threw her soccer cleats into the washing machine.",
+    "choices": [
+      {
+        "key": "A",
+        "text": "Covered in mud, Jenna's soccer cleats were thrown into the washing machine by her."
+      },
+      {
+        "key": "B",
+        "text": "Jenna threw her soccer cleats, covered in mud, into the washing machine."
+      },
+      {
+        "key": "C",
+        "text": "Jenna threw her soccer cleats into the washing machine, covered in mud."
+      },
+      {
+        "key": "D",
+        "text": "Both B and C correctly fix the modifier placement."
+      }
+    ],
+    "answer_key": "D",
+    "explanation": "In the original sentence, \"Covered in mud\" incorrectly modifies Jenna instead of the cleats. Both B and C correctly place the modifying phrase near \"soccer cleats,\" the word it should describe.",
+    "metadata": {
+      "content_hash": "sha256:e5f5b08517f29469237392f5e5c43b3b144703c7ffb57b33b3a65a8bd93af6aa",
+      "generator_model": "claude-sonnet-5",
+      "generated_at": "2026-07-13T12:04:05.249Z",
+      "verifier_model": "claude-opus-4-8",
+      "deterministic_check_passed": null,
+      "verifier_agreed": false,
+      "reviewed": false,
+      "reviewer": null
+    }
+  }
+]

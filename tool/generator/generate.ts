@@ -3,7 +3,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Choice, Passage, Question, QuestionType, Subject } from "./types.js";
 import { buildInstruction, SYSTEM_PROMPT } from "./prompts.js";
-import { contentHash, readJsonArray, writeJsonArray } from "./util.js";
+import { contentHash, hasLeakedArtifact, looksTruncated, readJsonArray, writeJsonArray } from "./util.js";
 import { deterministicMathCheck, verifyWithIndependentModel } from "./verify.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -45,12 +45,16 @@ function questionSchema(type: QuestionType) {
     type: "object",
     properties: { key: { type: "string" }, text: { type: "string" } },
     required: ["key", "text"],
+    additionalProperties: false,
   };
   const base = {
     type: "object",
     properties: {
       prompt: { type: "string" },
-      choices: { type: "array", items: choiceSchema, minItems: 4, maxItems: 4 },
+      // Strict tool schemas reject array minItems/maxItems, so choice-count and
+      // item-count bounds are enforced in code instead (see the malformed check
+      // and MAX_RAW_ITEMS below).
+      choices: { type: "array", items: choiceSchema },
       answer_key: { type: "string" },
       explanation: { type: "string" },
       difficulty: { type: "string", enum: ["easy", "medium", "hard"] },
@@ -64,7 +68,9 @@ function questionSchema(type: QuestionType) {
       "difficulty",
       ...(MATH_TYPES.includes(type) ? ["check_expression"] : []),
     ],
+    additionalProperties: false,
   };
+  const questionsArray = { type: "array", items: base };
 
   if (type === "reading_comprehension") {
     return {
@@ -74,17 +80,20 @@ function questionSchema(type: QuestionType) {
           type: "object",
           properties: { title: { type: "string" }, text: { type: "string" } },
           required: ["title", "text"],
+          additionalProperties: false,
         },
-        questions: { type: "array", items: base },
+        questions: questionsArray,
       },
       required: ["passage", "questions"],
+      additionalProperties: false,
     };
   }
 
   return {
     type: "object",
-    properties: { questions: { type: "array", items: base } },
+    properties: { questions: questionsArray },
     required: ["questions"],
+    additionalProperties: false,
   };
 }
 
@@ -104,7 +113,8 @@ async function generateBatch(
         name: "emit_batch",
         description: "Emit the generated batch of questions.",
         input_schema: questionSchema(type) as Anthropic.Tool.InputSchema,
-      },
+        strict: true,
+      } as Anthropic.Tool,
     ],
     tool_choice: { type: "tool", name: "emit_batch" },
   });
@@ -120,10 +130,23 @@ async function generateBatch(
   return { raw: input.questions ?? [] };
 }
 
+/** Extracts the trailing numeric sequence from an id like "math-algebra_equation-000123". */
+function idSeq(id: string): number {
+  const match = id.match(/-(\d+)$/);
+  return match ? parseInt(match[1], 10) : -1;
+}
+
+/**
+ * Next sequence number, derived from the highest existing id rather than the
+ * item count — count-based numbering collides if any shipped items are ever
+ * removed (e.g. deleting corrupted content leaves gaps that a later run's
+ * count-based numbering can walk straight back into).
+ */
 async function nextSeq(subject: Subject, type: QuestionType): Promise<number> {
   const staging = await readJsonArray<Question>(join(STAGING_DIR, `${subject}-${type}.json`));
   const shipped = await readJsonArray<Question>(join(ASSETS_DIR, subject, `${type}.json`));
-  return staging.length + shipped.length;
+  const maxSeq = Math.max(-1, ...[...staging, ...shipped].map((q) => idSeq(q.id)));
+  return maxSeq + 1;
 }
 
 async function existingHashes(subject: Subject, type: QuestionType): Promise<Set<string>> {
@@ -139,15 +162,45 @@ async function main() {
   console.log(`Generating ${count} ${subject}/${type} question(s) with ${GENERATOR_MODEL}...`);
   const { passage, raw } = await generateBatch(client, subject, type, count);
 
+  // Observed failure mode: the model occasionally degenerates into emitting
+  // thousands of near-empty items instead of the requested count. Treat a
+  // wildly oversized response as untrustworthy and bail out rather than
+  // processing it — a healthy response is never more than a few items over
+  // what was asked for.
+  const maxSaneItems = count * 4 + 10;
+  if (raw.length > maxSaneItems) {
+    console.error(
+      `Model returned ${raw.length} items for a request of ${count} — this looks like a ` +
+        `degenerate response, not real content. Discarding the batch; try again.`
+    );
+    process.exit(1);
+  }
+
   const seenHashes = await existingHashes(subject, type);
   let seq = await nextSeq(subject, type);
+
+  if (
+    type === "reading_comprehension" &&
+    passage &&
+    (!passage.title?.trim() ||
+      !passage.text?.trim() ||
+      hasLeakedArtifact(passage.title) ||
+      hasLeakedArtifact(passage.text) ||
+      looksTruncated(passage.text))
+  ) {
+    console.error(
+      "Model returned a malformed passage (missing title/text, a leaked artifact, or truncated " +
+        "prose). Discarding the batch; try again."
+    );
+    process.exit(1);
+  }
 
   let passageId: string | null = null;
   if (type === "reading_comprehension" && passage) {
     const passages = await readJsonArray<Passage>(join(ASSETS_DIR, "ela", "passages.json"));
     const stagingPassages = await readJsonArray<Passage>(join(STAGING_DIR, "ela-passages.json"));
-    const passageSeq = passages.length + stagingPassages.length;
-    passageId = `ela-passage-${String(passageSeq).padStart(6, "0")}`;
+    const maxPassageSeq = Math.max(-1, ...[...passages, ...stagingPassages].map((p) => idSeq(p.id)));
+    passageId = `ela-passage-${String(maxPassageSeq + 1).padStart(6, "0")}`;
     stagingPassages.push({
       id: passageId,
       title: passage.title,
@@ -165,13 +218,21 @@ async function main() {
   let failedVerifier = 0;
 
   for (const q of raw) {
+    const choiceKeys = Array.isArray(q.choices) ? q.choices.map((c) => c?.key) : [];
+    const expectedKeys = ["A", "B", "C", "D"];
     const malformed =
-      !q.prompt ||
+      !q.prompt?.trim() ||
       !Array.isArray(q.choices) ||
       q.choices.length !== 4 ||
-      q.choices.some((c) => !c.key || !c.text) ||
+      q.choices.some((c) => !c?.key?.trim() || !c?.text?.trim()) ||
+      !expectedKeys.every((k) => choiceKeys.includes(k)) ||
+      new Set(choiceKeys).size !== 4 ||
       !q.answer_key ||
-      !q.explanation;
+      !choiceKeys.includes(q.answer_key) ||
+      !q.explanation?.trim() ||
+      hasLeakedArtifact(q.prompt) ||
+      hasLeakedArtifact(q.explanation) ||
+      q.choices.some((c) => hasLeakedArtifact(c?.text ?? ""));
     if (malformed) {
       console.warn("  skipping malformed question from model output");
       continue;

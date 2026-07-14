@@ -5,7 +5,8 @@
   "main": "generate.ts",
   "scripts": {
     "generate": "tsx generate.ts",
-    "promote": "tsx promote.ts"
+    "promote": "tsx promote.ts",
+    "verify-assets": "tsx verify_assets.ts"
   },
   "keywords": [],
   "author": "",

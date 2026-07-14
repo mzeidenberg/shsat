@@ -2,52 +2,23 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../models/question.dart';
-
-class SessionRecord {
-  final Subject subject;
-  final int score;
-  final int total;
-  final DateTime completedAt;
-
-  const SessionRecord({
-    required this.subject,
-    required this.score,
-    required this.total,
-    required this.completedAt,
-  });
-
-  Map<String, dynamic> toJson() => {
-        'subject': subject.name,
-        'score': score,
-        'total': total,
-        'completed_at': completedAt.toIso8601String(),
-      };
-
-  factory SessionRecord.fromJson(Map<String, dynamic> json) => SessionRecord(
-        subject: (json['subject'] as String) == 'math' ? Subject.math : Subject.ela,
-        score: json['score'] as int,
-        total: json['total'] as int,
-        completedAt: DateTime.parse(json['completed_at'] as String),
-      );
-}
+import '../models/question_attempt.dart';
 
 class ProgressService {
-  static const _historyKey = 'quiz_history';
+  static const _attemptsKey = 'question_attempts';
 
-  Future<void> recordSession(SessionRecord record) async {
+  Future<void> recordAttempt(QuestionAttempt attempt) async {
     final prefs = await SharedPreferences.getInstance();
-    final history = await loadHistory();
-    history.add(record);
-    final encoded = jsonEncode(history.map((r) => r.toJson()).toList());
-    await prefs.setString(_historyKey, encoded);
+    final attempts = await loadAttempts()..add(attempt);
+    final encoded = jsonEncode(attempts.map((a) => a.toJson()).toList());
+    await prefs.setString(_attemptsKey, encoded);
   }
 
-  Future<List<SessionRecord>> loadHistory() async {
+  Future<List<QuestionAttempt>> loadAttempts() async {
     final prefs = await SharedPreferences.getInstance();
-    final raw = prefs.getString(_historyKey);
+    final raw = prefs.getString(_attemptsKey);
     if (raw == null) return [];
     final list = jsonDecode(raw) as List;
-    return list.map((e) => SessionRecord.fromJson(e as Map<String, dynamic>)).toList();
+    return list.map((e) => QuestionAttempt.fromJson(e as Map<String, dynamic>)).toList();
   }
 }

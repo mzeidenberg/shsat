@@ -13,6 +13,9 @@ class QuestionBank {
   List<Question> forSubject(Subject subject) =>
       questions.where((q) => q.subject == subject).toList();
 
+  List<Question> forType(QuestionType type) =>
+      questions.where((q) => q.type == type).toList();
+
   Passage? passageFor(Question question) =>
       question.passageId == null ? null : passagesById[question.passageId];
 }

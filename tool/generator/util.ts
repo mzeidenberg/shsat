@@ -27,3 +27,25 @@ export async function writeJsonArray<T>(path: string, items: T[]): Promise<void>
   await mkdir(dirname(path), { recursive: true });
   await writeFile(path, JSON.stringify(items, null, 2) + "\n", "utf-8");
 }
+
+/**
+ * Detects text corrupted by leaked model-internal artifacts: HTML/XML-ish
+ * closing tags (`</p>`, `</passage>`, `</parameter>`) and leaked JSON/dict
+ * fragments (e.g. `', 'title':'...`, `};{`) that occasionally bleed into
+ * generated content. Observed in ~35% of a large passage-generation batch.
+ */
+export function hasLeakedArtifact(text: string): boolean {
+  return (
+    /<\//.test(text) ||
+    /\};\{/.test(text) ||
+    /['"]\s*,\s*['"]?\s*$/.test(text.trimEnd()) ||
+    /['"]\s*,\s*['"]\w+['"]?\s*:/.test(text)
+  );
+}
+
+/** For longer prose (passages): flags text that stops mid-sentence rather
+ * than ending on terminal punctuation — a sign of truncated generation. */
+export function looksTruncated(text: string): boolean {
+  const trimmed = text.trim();
+  return trimmed.length > 0 && !/[.!?"'”’)]$/.test(trimmed);
+}

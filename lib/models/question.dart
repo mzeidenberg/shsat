@@ -32,6 +32,20 @@ QuestionType questionTypeFromJson(String value) {
   }
 }
 
+extension QuestionTypeLabel on QuestionType {
+  String get label => switch (this) {
+        QuestionType.arithmeticWordProblem => 'Arithmetic Word Problems',
+        QuestionType.algebraEquation => 'Algebra Equations',
+        QuestionType.grammarEdit => 'Grammar & Editing',
+        QuestionType.readingComprehension => 'Reading Comprehension',
+      };
+
+  Subject get subject => switch (this) {
+        QuestionType.arithmeticWordProblem || QuestionType.algebraEquation => Subject.math,
+        QuestionType.grammarEdit || QuestionType.readingComprehension => Subject.ela,
+      };
+}
+
 class Question {
   final String id;
   final Subject subject;
